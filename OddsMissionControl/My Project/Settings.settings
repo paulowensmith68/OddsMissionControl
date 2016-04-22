@@ -1,7 +1,21 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" UseMySettingsClassName="true">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="ProcessLogPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\#myPrograms\OddsMissionControl\logs\</Value>
+    </Setting>
+    <Setting Name="MasterServiceLogFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\#myPrograms\OddsMissionControl\logs\OddsMissionControl_Log_File__2016_04_10.txt</Value>
+    </Setting>
+    <Setting Name="MasterServiceConfigFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\#myPrograms\OddsMissionControl\program\OddsMissionControl.exe.config</Value>
+    </Setting>
+    <Setting Name="BetFairFeedServiceLogFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\BetFairFeedService\logs\BetFairFeedService_Log_File__&amp;cccc_mm_dd.txt</Value>
+    </Setting>
+    <Setting Name="BetFairFeedServiceConfigFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\#myPrograms\OddsMissionControl\program&amp;StreamId\BetFairFeedService.exe.config</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
