@@ -319,7 +319,7 @@ Partial Class frmMain
         '
         Me.tbxLoadSpocosyFilesToDbService5.BackColor = System.Drawing.Color.FloralWhite
         Me.tbxLoadSpocosyFilesToDbService5.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxLoadSpocosyFilesToDbService5.ForeColor = System.Drawing.Color.Maroon
+        Me.tbxLoadSpocosyFilesToDbService5.ForeColor = System.Drawing.Color.DimGray
         Me.tbxLoadSpocosyFilesToDbService5.Location = New System.Drawing.Point(60, 190)
         Me.tbxLoadSpocosyFilesToDbService5.Name = "tbxLoadSpocosyFilesToDbService5"
         Me.tbxLoadSpocosyFilesToDbService5.ReadOnly = True
@@ -401,7 +401,7 @@ Partial Class frmMain
         '
         Me.tbxLoadSpocosyFilesToDbService4.BackColor = System.Drawing.Color.FloralWhite
         Me.tbxLoadSpocosyFilesToDbService4.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxLoadSpocosyFilesToDbService4.ForeColor = System.Drawing.Color.Maroon
+        Me.tbxLoadSpocosyFilesToDbService4.ForeColor = System.Drawing.Color.DimGray
         Me.tbxLoadSpocosyFilesToDbService4.Location = New System.Drawing.Point(60, 152)
         Me.tbxLoadSpocosyFilesToDbService4.Name = "tbxLoadSpocosyFilesToDbService4"
         Me.tbxLoadSpocosyFilesToDbService4.ReadOnly = True
@@ -483,7 +483,7 @@ Partial Class frmMain
         '
         Me.tbxLoadSpocosyFilesToDbService3.BackColor = System.Drawing.Color.FloralWhite
         Me.tbxLoadSpocosyFilesToDbService3.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxLoadSpocosyFilesToDbService3.ForeColor = System.Drawing.Color.Maroon
+        Me.tbxLoadSpocosyFilesToDbService3.ForeColor = System.Drawing.Color.DimGray
         Me.tbxLoadSpocosyFilesToDbService3.Location = New System.Drawing.Point(60, 114)
         Me.tbxLoadSpocosyFilesToDbService3.Name = "tbxLoadSpocosyFilesToDbService3"
         Me.tbxLoadSpocosyFilesToDbService3.ReadOnly = True
@@ -565,7 +565,7 @@ Partial Class frmMain
         '
         Me.tbxLoadSpocosyFilesToDbService2.BackColor = System.Drawing.Color.FloralWhite
         Me.tbxLoadSpocosyFilesToDbService2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxLoadSpocosyFilesToDbService2.ForeColor = System.Drawing.Color.Maroon
+        Me.tbxLoadSpocosyFilesToDbService2.ForeColor = System.Drawing.Color.DimGray
         Me.tbxLoadSpocosyFilesToDbService2.Location = New System.Drawing.Point(60, 76)
         Me.tbxLoadSpocosyFilesToDbService2.Name = "tbxLoadSpocosyFilesToDbService2"
         Me.tbxLoadSpocosyFilesToDbService2.ReadOnly = True
@@ -647,7 +647,7 @@ Partial Class frmMain
         '
         Me.tbxLoadSpocosyFilesToDbService1.BackColor = System.Drawing.Color.FloralWhite
         Me.tbxLoadSpocosyFilesToDbService1.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxLoadSpocosyFilesToDbService1.ForeColor = System.Drawing.Color.Maroon
+        Me.tbxLoadSpocosyFilesToDbService1.ForeColor = System.Drawing.Color.DimGray
         Me.tbxLoadSpocosyFilesToDbService1.Location = New System.Drawing.Point(60, 35)
         Me.tbxLoadSpocosyFilesToDbService1.Name = "tbxLoadSpocosyFilesToDbService1"
         Me.tbxLoadSpocosyFilesToDbService1.ReadOnly = True
@@ -781,7 +781,7 @@ Partial Class frmMain
         '
         Me.TextBox13.BackColor = System.Drawing.Color.FloralWhite
         Me.TextBox13.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox13.ForeColor = System.Drawing.Color.Maroon
+        Me.TextBox13.ForeColor = System.Drawing.Color.Green
         Me.TextBox13.Location = New System.Drawing.Point(60, 190)
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.ReadOnly = True
@@ -862,7 +862,7 @@ Partial Class frmMain
         '
         Me.TextBox15.BackColor = System.Drawing.Color.FloralWhite
         Me.TextBox15.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox15.ForeColor = System.Drawing.Color.Maroon
+        Me.TextBox15.ForeColor = System.Drawing.Color.Green
         Me.TextBox15.Location = New System.Drawing.Point(60, 152)
         Me.TextBox15.Name = "TextBox15"
         Me.TextBox15.ReadOnly = True
@@ -943,7 +943,7 @@ Partial Class frmMain
         '
         Me.TextBox17.BackColor = System.Drawing.Color.FloralWhite
         Me.TextBox17.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox17.ForeColor = System.Drawing.Color.Maroon
+        Me.TextBox17.ForeColor = System.Drawing.Color.Green
         Me.TextBox17.Location = New System.Drawing.Point(60, 114)
         Me.TextBox17.Name = "TextBox17"
         Me.TextBox17.ReadOnly = True
@@ -1024,7 +1024,7 @@ Partial Class frmMain
         '
         Me.TextBox19.BackColor = System.Drawing.Color.FloralWhite
         Me.TextBox19.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox19.ForeColor = System.Drawing.Color.Maroon
+        Me.TextBox19.ForeColor = System.Drawing.Color.Green
         Me.TextBox19.Location = New System.Drawing.Point(60, 76)
         Me.TextBox19.Name = "TextBox19"
         Me.TextBox19.ReadOnly = True
@@ -1105,7 +1105,7 @@ Partial Class frmMain
         '
         Me.TextBox21.BackColor = System.Drawing.Color.FloralWhite
         Me.TextBox21.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox21.ForeColor = System.Drawing.Color.Maroon
+        Me.TextBox21.ForeColor = System.Drawing.Color.Green
         Me.TextBox21.Location = New System.Drawing.Point(60, 35)
         Me.TextBox21.Name = "TextBox21"
         Me.TextBox21.ReadOnly = True
@@ -1215,7 +1215,7 @@ Partial Class frmMain
         '
         Me.TextBox23.BackColor = System.Drawing.Color.FloralWhite
         Me.TextBox23.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox23.ForeColor = System.Drawing.Color.Maroon
+        Me.TextBox23.ForeColor = System.Drawing.Color.Green
         Me.TextBox23.Location = New System.Drawing.Point(60, 26)
         Me.TextBox23.Name = "TextBox23"
         Me.TextBox23.ReadOnly = True
@@ -1369,7 +1369,7 @@ Partial Class frmMain
         '
         Me.tbxMasterMonitorServiceName.BackColor = System.Drawing.Color.FloralWhite
         Me.tbxMasterMonitorServiceName.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxMasterMonitorServiceName.ForeColor = System.Drawing.Color.Maroon
+        Me.tbxMasterMonitorServiceName.ForeColor = System.Drawing.Color.DimGray
         Me.tbxMasterMonitorServiceName.Location = New System.Drawing.Point(60, 26)
         Me.tbxMasterMonitorServiceName.Name = "tbxMasterMonitorServiceName"
         Me.tbxMasterMonitorServiceName.ReadOnly = True
@@ -1471,7 +1471,7 @@ Partial Class frmMain
         '
         Me.TextBox25.BackColor = System.Drawing.Color.FloralWhite
         Me.TextBox25.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox25.ForeColor = System.Drawing.Color.Maroon
+        Me.TextBox25.ForeColor = System.Drawing.Color.Green
         Me.TextBox25.Location = New System.Drawing.Point(60, 62)
         Me.TextBox25.Name = "TextBox25"
         Me.TextBox25.ReadOnly = True
@@ -1542,7 +1542,7 @@ Partial Class frmMain
         '
         Me.TextBox2.BackColor = System.Drawing.Color.FloralWhite
         Me.TextBox2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.ForeColor = System.Drawing.Color.Maroon
+        Me.TextBox2.ForeColor = System.Drawing.Color.DimGray
         Me.TextBox2.Location = New System.Drawing.Point(61, 26)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
