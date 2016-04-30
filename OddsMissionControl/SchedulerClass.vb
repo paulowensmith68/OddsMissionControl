@@ -14,7 +14,7 @@
             Else
 
                 ' Stop
-                service.ConnectToServiceController(".", service.strName)
+                service.CheckServiceStatus(service.strServiceName)
 
             End If
 

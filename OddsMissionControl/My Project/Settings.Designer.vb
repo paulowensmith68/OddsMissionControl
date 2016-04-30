@@ -115,6 +115,30 @@ Namespace My
                 Me("BetFairFeedServiceConfigFname") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\DummyService\logs\DummyService_Log_File_StreamA_&cccc_mm_dd.txt")>  _
+        Public Property DummyServiceLogFname() As String
+            Get
+                Return CType(Me("DummyServiceLogFname"),String)
+            End Get
+            Set
+                Me("DummyServiceLogFname") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\DummyService\program\DummyService.exe.config")>  _
+        Public Property DummyServiceConfigFname() As String
+            Get
+                Return CType(Me("DummyServiceConfigFname"),String)
+            End Get
+            Set
+                Me("DummyServiceConfigFname") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

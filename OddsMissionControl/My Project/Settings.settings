@@ -17,5 +17,11 @@
     <Setting Name="BetFairFeedServiceConfigFname" Type="System.String" Scope="User">
       <Value Profile="(Default)">c:\#myPrograms\OddsMissionControl\program&amp;StreamId\BetFairFeedService.exe.config</Value>
     </Setting>
+    <Setting Name="DummyServiceLogFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\DummyService\logs\DummyService_Log_File_StreamA_&amp;cccc_mm_dd.txt</Value>
+    </Setting>
+    <Setting Name="DummyServiceConfigFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\DummyService\program\DummyService.exe.config</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
