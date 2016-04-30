@@ -6,7 +6,7 @@
         myServiceNames = New List(Of String)()
 
         ' Test
-        myServiceNames.Add("DummyService")
+        ' myServiceNames.Add("DummyService")
 
         ' Live
         'myServiceNames.Add("OddsMonitorService")

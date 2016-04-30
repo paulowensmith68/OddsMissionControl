@@ -1516,6 +1516,7 @@ Partial Class frmMain
         'TextBox27
         '
         Me.TextBox27.BackColor = System.Drawing.Color.AliceBlue
+        Me.TextBox27.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox27.Location = New System.Drawing.Point(348, 62)
         Me.TextBox27.Name = "TextBox27"
         Me.TextBox27.ReadOnly = True
@@ -1606,6 +1607,7 @@ Partial Class frmMain
         'tbxBetFairFeedServiceStatus
         '
         Me.tbxBetFairFeedServiceStatus.BackColor = System.Drawing.Color.AliceBlue
+        Me.tbxBetFairFeedServiceStatus.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxBetFairFeedServiceStatus.Location = New System.Drawing.Point(348, 26)
         Me.tbxBetFairFeedServiceStatus.Name = "tbxBetFairFeedServiceStatus"
         Me.tbxBetFairFeedServiceStatus.ReadOnly = True
@@ -1624,9 +1626,9 @@ Partial Class frmMain
         '
         'btnStopAllServices
         '
-        Me.btnStopAllServices.BackColor = System.Drawing.Color.Red
+        Me.btnStopAllServices.BackColor = System.Drawing.Color.LightSalmon
         Me.btnStopAllServices.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnStopAllServices.ForeColor = System.Drawing.SystemColors.Control
+        Me.btnStopAllServices.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnStopAllServices.Location = New System.Drawing.Point(207, 18)
         Me.btnStopAllServices.Name = "btnStopAllServices"
         Me.btnStopAllServices.Size = New System.Drawing.Size(156, 47)
@@ -1685,7 +1687,6 @@ Partial Class frmMain
         Me.tbxMonitorServiceName.ReadOnly = True
         Me.tbxMonitorServiceName.Size = New System.Drawing.Size(227, 23)
         Me.tbxMonitorServiceName.TabIndex = 49
-        Me.tbxMonitorServiceName.Text = "DummyService"
         Me.tbxMonitorServiceName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btnDummyServiceStart
@@ -1766,7 +1767,7 @@ Partial Class frmMain
         '
         'btnStartAll
         '
-        Me.btnStartAll.BackColor = System.Drawing.Color.PaleGreen
+        Me.btnStartAll.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnStartAll.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStartAll.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnStartAll.Location = New System.Drawing.Point(45, 18)
@@ -1778,7 +1779,7 @@ Partial Class frmMain
         '
         'btnRefreshStatus
         '
-        Me.btnRefreshStatus.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.btnRefreshStatus.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnRefreshStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefreshStatus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnRefreshStatus.Location = New System.Drawing.Point(420, 18)
