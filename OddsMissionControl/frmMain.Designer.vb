@@ -22,6 +22,7 @@ Partial Class frmMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.btnDownloadSpocosyFilesServiceSettings = New System.Windows.Forms.Button()
         Me.btnDownloadSpocosyFilesServiceStart = New System.Windows.Forms.Button()
@@ -129,15 +130,6 @@ Partial Class frmMain
         Me.Label26 = New System.Windows.Forms.Label()
         Me.btnStopAllServices = New System.Windows.Forms.Button()
         Me.rtbLog = New System.Windows.Forms.RichTextBox()
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.tbxMonitorServiceName = New System.Windows.Forms.TextBox()
-        Me.btnDummyServiceStart = New System.Windows.Forms.Button()
-        Me.btnDummyServiceStop = New System.Windows.Forms.Button()
-        Me.Label28 = New System.Windows.Forms.Label()
-        Me.btnDummyServiceSettings = New System.Windows.Forms.Button()
-        Me.tbxDummyServiceStatus = New System.Windows.Forms.TextBox()
-        Me.Label29 = New System.Windows.Forms.Label()
         Me.btnStartAll = New System.Windows.Forms.Button()
         Me.btnRefreshStatus = New System.Windows.Forms.Button()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
@@ -155,11 +147,13 @@ Partial Class frmMain
         Me.Label38 = New System.Windows.Forms.Label()
         Me.tbxSavedXmlCount = New System.Windows.Forms.TextBox()
         Me.Label37 = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.btnRefreshAutoOff = New System.Windows.Forms.Button()
+        Me.btnRefreshAutoOn = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
-        Me.GroupBox5.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
         Me.SuspendLayout()
@@ -208,7 +202,7 @@ Partial Class frmMain
         '
         'GroupBox1
         '
-        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.GroupBox1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.btnDownloadSpocosyFilesServiceStart)
@@ -219,7 +213,7 @@ Partial Class frmMain
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox1.Location = New System.Drawing.Point(45, 180)
+        Me.GroupBox1.Location = New System.Drawing.Point(45, 99)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(917, 70)
         Me.GroupBox1.TabIndex = 51
@@ -310,7 +304,7 @@ Partial Class frmMain
         Me.GroupBox2.Controls.Add(Me.btnLoadSpocosyFilesToDbService1Settings)
         Me.GroupBox2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GroupBox2.Location = New System.Drawing.Point(45, 261)
+        Me.GroupBox2.Location = New System.Drawing.Point(45, 180)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(917, 216)
         Me.GroupBox2.TabIndex = 52
@@ -759,7 +753,7 @@ Partial Class frmMain
         Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceASettings)
         Me.GroupBox3.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GroupBox3.Location = New System.Drawing.Point(45, 494)
+        Me.GroupBox3.Location = New System.Drawing.Point(45, 413)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(917, 252)
         Me.GroupBox3.TabIndex = 53
@@ -1260,7 +1254,7 @@ Partial Class frmMain
         Me.GroupBox4.Controls.Add(Me.Label26)
         Me.GroupBox4.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox4.Location = New System.Drawing.Point(45, 763)
+        Me.GroupBox4.Location = New System.Drawing.Point(45, 682)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(917, 101)
         Me.GroupBox4.TabIndex = 54
@@ -1437,7 +1431,7 @@ Partial Class frmMain
         'btnStopAllServices
         '
         Me.btnStopAllServices.BackColor = System.Drawing.Color.LightSalmon
-        Me.btnStopAllServices.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStopAllServices.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStopAllServices.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnStopAllServices.Location = New System.Drawing.Point(231, 18)
         Me.btnStopAllServices.Name = "btnStopAllServices"
@@ -1456,115 +1450,10 @@ Partial Class frmMain
         Me.rtbLog.TabIndex = 4
         Me.rtbLog.Text = ""
         '
-        'GroupBox5
-        '
-        Me.GroupBox5.BackColor = System.Drawing.Color.White
-        Me.GroupBox5.Controls.Add(Me.Label27)
-        Me.GroupBox5.Controls.Add(Me.tbxMonitorServiceName)
-        Me.GroupBox5.Controls.Add(Me.btnDummyServiceStart)
-        Me.GroupBox5.Controls.Add(Me.btnDummyServiceStop)
-        Me.GroupBox5.Controls.Add(Me.Label28)
-        Me.GroupBox5.Controls.Add(Me.btnDummyServiceSettings)
-        Me.GroupBox5.Controls.Add(Me.tbxDummyServiceStatus)
-        Me.GroupBox5.Controls.Add(Me.Label29)
-        Me.GroupBox5.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox5.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox5.Location = New System.Drawing.Point(45, 99)
-        Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(917, 70)
-        Me.GroupBox5.TabIndex = 61
-        Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "Odds Monitor Service"
-        '
-        'Label27
-        '
-        Me.Label27.AutoSize = True
-        Me.Label27.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.Location = New System.Drawing.Point(11, 30)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(43, 14)
-        Me.Label27.TabIndex = 50
-        Me.Label27.Text = "Name"
-        '
-        'tbxMonitorServiceName
-        '
-        Me.tbxMonitorServiceName.BackColor = System.Drawing.Color.LightGoldenrodYellow
-        Me.tbxMonitorServiceName.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxMonitorServiceName.ForeColor = System.Drawing.Color.Black
-        Me.tbxMonitorServiceName.Location = New System.Drawing.Point(60, 26)
-        Me.tbxMonitorServiceName.Name = "tbxMonitorServiceName"
-        Me.tbxMonitorServiceName.ReadOnly = True
-        Me.tbxMonitorServiceName.Size = New System.Drawing.Size(227, 23)
-        Me.tbxMonitorServiceName.TabIndex = 49
-        Me.tbxMonitorServiceName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'btnDummyServiceStart
-        '
-        Me.btnDummyServiceStart.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnDummyServiceStart.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDummyServiceStart.Location = New System.Drawing.Point(512, 23)
-        Me.btnDummyServiceStart.Name = "btnDummyServiceStart"
-        Me.btnDummyServiceStart.Size = New System.Drawing.Size(114, 29)
-        Me.btnDummyServiceStart.TabIndex = 0
-        Me.btnDummyServiceStart.Text = "Start Service"
-        Me.btnDummyServiceStart.UseVisualStyleBackColor = False
-        '
-        'btnDummyServiceStop
-        '
-        Me.btnDummyServiceStop.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnDummyServiceStop.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDummyServiceStop.Location = New System.Drawing.Point(632, 23)
-        Me.btnDummyServiceStop.Name = "btnDummyServiceStop"
-        Me.btnDummyServiceStop.Size = New System.Drawing.Size(114, 29)
-        Me.btnDummyServiceStop.TabIndex = 1
-        Me.btnDummyServiceStop.Text = "Stop Service"
-        Me.btnDummyServiceStop.UseVisualStyleBackColor = False
-        '
-        'Label28
-        '
-        Me.Label28.AutoSize = True
-        Me.Label28.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(294, 30)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(48, 14)
-        Me.Label28.TabIndex = 48
-        Me.Label28.Text = "Status"
-        '
-        'btnDummyServiceSettings
-        '
-        Me.btnDummyServiceSettings.BackColor = System.Drawing.SystemColors.Menu
-        Me.btnDummyServiceSettings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDummyServiceSettings.Location = New System.Drawing.Point(778, 23)
-        Me.btnDummyServiceSettings.Name = "btnDummyServiceSettings"
-        Me.btnDummyServiceSettings.Size = New System.Drawing.Size(114, 29)
-        Me.btnDummyServiceSettings.TabIndex = 2
-        Me.btnDummyServiceSettings.Text = "Change Settings"
-        Me.btnDummyServiceSettings.UseVisualStyleBackColor = False
-        '
-        'tbxDummyServiceStatus
-        '
-        Me.tbxDummyServiceStatus.BackColor = System.Drawing.Color.AliceBlue
-        Me.tbxDummyServiceStatus.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxDummyServiceStatus.Location = New System.Drawing.Point(348, 26)
-        Me.tbxDummyServiceStatus.Name = "tbxDummyServiceStatus"
-        Me.tbxDummyServiceStatus.ReadOnly = True
-        Me.tbxDummyServiceStatus.Size = New System.Drawing.Size(139, 23)
-        Me.tbxDummyServiceStatus.TabIndex = 46
-        Me.tbxDummyServiceStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.Location = New System.Drawing.Point(49, 62)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(0, 16)
-        Me.Label29.TabIndex = 45
-        '
         'btnStartAll
         '
         Me.btnStartAll.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnStartAll.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStartAll.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStartAll.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnStartAll.Location = New System.Drawing.Point(45, 18)
         Me.btnStartAll.Name = "btnStartAll"
@@ -1576,11 +1465,11 @@ Partial Class frmMain
         'btnRefreshStatus
         '
         Me.btnRefreshStatus.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnRefreshStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRefreshStatus.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefreshStatus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnRefreshStatus.Location = New System.Drawing.Point(1024, 34)
+        Me.btnRefreshStatus.Location = New System.Drawing.Point(972, 18)
         Me.btnRefreshStatus.Name = "btnRefreshStatus"
-        Me.btnRefreshStatus.Size = New System.Drawing.Size(121, 32)
+        Me.btnRefreshStatus.Size = New System.Drawing.Size(121, 27)
         Me.btnRefreshStatus.TabIndex = 62
         Me.btnRefreshStatus.Text = "Refresh"
         Me.btnRefreshStatus.UseVisualStyleBackColor = False
@@ -1761,17 +1650,47 @@ Partial Class frmMain
         Me.Label37.TabIndex = 56
         Me.Label37.Text = "Saved Xml"
         '
+        'Timer1
+        '
+        Me.Timer1.Interval = 10000
+        '
+        'btnRefreshAutoOff
+        '
+        Me.btnRefreshAutoOff.BackColor = System.Drawing.Color.LightSalmon
+        Me.btnRefreshAutoOff.Enabled = False
+        Me.btnRefreshAutoOff.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRefreshAutoOff.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnRefreshAutoOff.Location = New System.Drawing.Point(1097, 51)
+        Me.btnRefreshAutoOff.Name = "btnRefreshAutoOff"
+        Me.btnRefreshAutoOff.Size = New System.Drawing.Size(121, 27)
+        Me.btnRefreshAutoOff.TabIndex = 65
+        Me.btnRefreshAutoOff.Text = "Refresh Auto On"
+        Me.btnRefreshAutoOff.UseVisualStyleBackColor = False
+        '
+        'btnRefreshAutoOn
+        '
+        Me.btnRefreshAutoOn.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnRefreshAutoOn.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRefreshAutoOn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnRefreshAutoOn.Location = New System.Drawing.Point(972, 51)
+        Me.btnRefreshAutoOn.Name = "btnRefreshAutoOn"
+        Me.btnRefreshAutoOn.Size = New System.Drawing.Size(121, 27)
+        Me.btnRefreshAutoOn.TabIndex = 66
+        Me.btnRefreshAutoOn.Text = "Refresh Auto On"
+        Me.btnRefreshAutoOn.UseVisualStyleBackColor = False
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightGray
-        Me.ClientSize = New System.Drawing.Size(1226, 878)
+        Me.ClientSize = New System.Drawing.Size(1226, 796)
+        Me.Controls.Add(Me.btnRefreshAutoOn)
+        Me.Controls.Add(Me.btnRefreshAutoOff)
         Me.Controls.Add(Me.GroupBox7)
         Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.btnRefreshStatus)
         Me.Controls.Add(Me.btnStartAll)
-        Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.rtbLog)
         Me.Controls.Add(Me.btnStopAllServices)
         Me.Controls.Add(Me.GroupBox4)
@@ -1790,8 +1709,6 @@ Partial Class frmMain
         Me.GroupBox3.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
-        Me.GroupBox5.ResumeLayout(False)
-        Me.GroupBox5.PerformLayout()
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
         Me.GroupBox7.ResumeLayout(False)
@@ -1890,15 +1807,6 @@ Partial Class frmMain
     Friend WithEvents Label26 As System.Windows.Forms.Label
     Friend WithEvents btnStopAllServices As System.Windows.Forms.Button
     Friend WithEvents rtbLog As System.Windows.Forms.RichTextBox
-    Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
-    Friend WithEvents Label27 As System.Windows.Forms.Label
-    Friend WithEvents tbxMonitorServiceName As System.Windows.Forms.TextBox
-    Friend WithEvents btnDummyServiceStart As System.Windows.Forms.Button
-    Friend WithEvents btnDummyServiceStop As System.Windows.Forms.Button
-    Friend WithEvents Label28 As System.Windows.Forms.Label
-    Friend WithEvents btnDummyServiceSettings As System.Windows.Forms.Button
-    Friend WithEvents tbxDummyServiceStatus As System.Windows.Forms.TextBox
-    Friend WithEvents Label29 As System.Windows.Forms.Label
     Friend WithEvents Label30 As Label
     Friend WithEvents TextBox25 As TextBox
     Friend WithEvents Button50 As Button
@@ -1931,4 +1839,7 @@ Partial Class frmMain
     Friend WithEvents Label38 As Label
     Friend WithEvents tbxStagingTableRows As TextBox
     Friend WithEvents Label39 As Label
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents btnRefreshAutoOff As Button
+    Friend WithEvents btnRefreshAutoOn As Button
 End Class

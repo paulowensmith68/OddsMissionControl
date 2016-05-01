@@ -76,7 +76,7 @@ Public Class frmMain
 
     End Sub
 
-    Private Sub btnDummyServiceStart_Click(sender As Object, e As EventArgs) Handles btnDummyServiceStart.Click, btnDownloadSpocosyFilesServiceStart.Click,
+    Private Sub btnDummyServiceStart_Click(sender As Object, e As EventArgs) Handles btnDownloadSpocosyFilesServiceStart.Click,
       btnLoadSpocosyFilesToDbService1Start.Click, btnLoadSpocosyFilesToDbService2Start.Click, btnLoadSpocosyFilesToDbService3Start.Click, btnLoadSpocosyFilesToDbService4Start.Click,
       btnLoadSpocosyFilesToDbService5Start.Click, btnLoadSpocosyDataServiceAStart.Click, btnLoadSpocosyDataServiceBStart.Click, btnLoadSpocosyDataServiceCStart.Click,
       btnLoadSpocosyDataServiceDStart.Click, btnLoadSpocosyDataServiceEStart.Click, btnLoadSpocosyDataServiceXStart.Click, btnBetFairFeedServiceStart.Click
@@ -106,7 +106,7 @@ Public Class frmMain
 
     End Sub
 
-    Private Sub btnDummyServiceStop_Click(sender As Object, e As EventArgs) Handles btnDummyServiceStop.Click, btnDownloadSpocosyFilesServiceStop.Click,
+    Private Sub btnDummyServiceStop_Click(sender As Object, e As EventArgs) Handles btnDownloadSpocosyFilesServiceStop.Click,
       btnLoadSpocosyFilesToDbService1Stop.Click, btnLoadSpocosyFilesToDbService2Stop.Click, btnLoadSpocosyFilesToDbService3Stop.Click, btnLoadSpocosyFilesToDbService4Stop.Click,
       btnLoadSpocosyFilesToDbService5Stop.Click, btnLoadSpocosyDataServiceAStop.Click, btnLoadSpocosyDataServiceBStop.Click, btnLoadSpocosyDataServiceCStop.Click,
       btnLoadSpocosyDataServiceDStop.Click, btnLoadSpocosyDataServiceEStop.Click, btnLoadSpocosyDataServiceXStop.Click, btnBetFairFeedServiceStop.Click
@@ -230,7 +230,7 @@ Public Class frmMain
 
     End Sub
 
-    Private Sub btnMonitorServiceNameChangeSettings_Click(sender As Object, e As EventArgs) Handles btnDummyServiceSettings.Click, btnDownloadSpocosyFilesServiceSettings.Click,
+    Private Sub btnMonitorServiceNameChangeSettings_Click(sender As Object, e As EventArgs) Handles btnDownloadSpocosyFilesServiceSettings.Click,
       btnLoadSpocosyFilesToDbService1Settings.Click, btnLoadSpocosyFilesToDbService2Settings.Click, btnLoadSpocosyFilesToDbService3Settings.Click, btnLoadSpocosyFilesToDbService4Settings.Click,
       btnLoadSpocosyFilesToDbService5Settings.Click, btnLoadSpocosyDataServiceASettings.Click, btnLoadSpocosyDataServiceBSettings.Click, btnLoadSpocosyDataServiceCSettings.Click,
       btnLoadSpocosyDataServiceDSettings.Click, btnLoadSpocosyDataServiceESettings.Click, btnLoadSpocosyDataServiceXSettings.Click, btnBetFairFeedServiceSettings.Click
@@ -381,4 +381,36 @@ Public Class frmMain
 
     End Function
 
+    Private Sub btnRefreshAutoOn_Click(sender As Object, e As EventArgs) Handles btnRefreshAutoOn.Click
+        Timer1.Enabled = True
+        btnRefreshAutoOff.Enabled = True
+        btnRefreshAutoOn.Enabled = False
+    End Sub
+
+    Private Sub btnRefreshAutoOff_Click(sender As Object, e As EventArgs) Handles btnRefreshAutoOff.Click
+        Timer1.Enabled = False
+        btnRefreshAutoOn.Enabled = True
+        btnRefreshAutoOff.Enabled = False
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+        ' Refresh status
+        For Each service In OddsServiceList
+
+            ' Set current status
+            service.CheckServiceStatus(service.strServiceName)
+
+            ' Update buttons
+            UpdateButtons(service)
+
+        Next
+
+        ' Update Remote File Status
+        CheckFileStatus()
+
+        ' Database counts
+        DatabaseCounts()
+
+    End Sub
 End Class
