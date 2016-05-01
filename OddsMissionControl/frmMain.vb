@@ -179,8 +179,16 @@ Public Class frmMain
             ' Start each service
             For Each service In OddsServiceList
 
-                ' Start the service
+                ' Stop the service
                 service.StopService(service.strServiceName)
+
+                ' Wait to flush downloaded files
+                If service.strServiceName.Contains("DownloadSpocosyFiles") Then
+                    rtbLog.AppendText("Sleeping for 15secs for downloads...")
+                    rtbLog.ScrollToCaret()
+                    Application.DoEvents()
+                    Threading.Thread.Sleep(15000)
+                End If
 
             Next
 

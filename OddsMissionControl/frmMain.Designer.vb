@@ -1439,9 +1439,9 @@ Partial Class frmMain
         Me.btnStopAllServices.BackColor = System.Drawing.Color.LightSalmon
         Me.btnStopAllServices.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStopAllServices.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnStopAllServices.Location = New System.Drawing.Point(308, 27)
+        Me.btnStopAllServices.Location = New System.Drawing.Point(231, 18)
         Me.btnStopAllServices.Name = "btnStopAllServices"
-        Me.btnStopAllServices.Size = New System.Drawing.Size(156, 47)
+        Me.btnStopAllServices.Size = New System.Drawing.Size(156, 39)
         Me.btnStopAllServices.TabIndex = 3
         Me.btnStopAllServices.Text = "Stop All Services"
         Me.btnStopAllServices.UseVisualStyleBackColor = False
@@ -1566,9 +1566,9 @@ Partial Class frmMain
         Me.btnStartAll.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnStartAll.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStartAll.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnStartAll.Location = New System.Drawing.Point(97, 27)
+        Me.btnStartAll.Location = New System.Drawing.Point(45, 18)
         Me.btnStartAll.Name = "btnStartAll"
-        Me.btnStartAll.Size = New System.Drawing.Size(156, 47)
+        Me.btnStartAll.Size = New System.Drawing.Size(156, 39)
         Me.btnStartAll.TabIndex = 2
         Me.btnStartAll.Text = "Start All Services"
         Me.btnStartAll.UseVisualStyleBackColor = False
@@ -1578,9 +1578,9 @@ Partial Class frmMain
         Me.btnRefreshStatus.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnRefreshStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefreshStatus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnRefreshStatus.Location = New System.Drawing.Point(1021, 27)
+        Me.btnRefreshStatus.Location = New System.Drawing.Point(1024, 34)
         Me.btnRefreshStatus.Name = "btnRefreshStatus"
-        Me.btnRefreshStatus.Size = New System.Drawing.Size(143, 47)
+        Me.btnRefreshStatus.Size = New System.Drawing.Size(121, 32)
         Me.btnRefreshStatus.TabIndex = 62
         Me.btnRefreshStatus.Text = "Refresh"
         Me.btnRefreshStatus.UseVisualStyleBackColor = False
@@ -1618,10 +1618,10 @@ Partial Class frmMain
         Me.tbxLocalFileCount.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.tbxLocalFileCount.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxLocalFileCount.ForeColor = System.Drawing.Color.Black
-        Me.tbxLocalFileCount.Location = New System.Drawing.Point(148, 336)
+        Me.tbxLocalFileCount.Location = New System.Drawing.Point(112, 336)
         Me.tbxLocalFileCount.Name = "tbxLocalFileCount"
         Me.tbxLocalFileCount.ReadOnly = True
-        Me.tbxLocalFileCount.Size = New System.Drawing.Size(74, 23)
+        Me.tbxLocalFileCount.Size = New System.Drawing.Size(99, 23)
         Me.tbxLocalFileCount.TabIndex = 57
         Me.tbxLocalFileCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -1640,10 +1640,10 @@ Partial Class frmMain
         Me.tbxRemoteFileCount.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.tbxRemoteFileCount.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxRemoteFileCount.ForeColor = System.Drawing.Color.Black
-        Me.tbxRemoteFileCount.Location = New System.Drawing.Point(148, 305)
+        Me.tbxRemoteFileCount.Location = New System.Drawing.Point(112, 301)
         Me.tbxRemoteFileCount.Name = "tbxRemoteFileCount"
         Me.tbxRemoteFileCount.ReadOnly = True
-        Me.tbxRemoteFileCount.Size = New System.Drawing.Size(74, 23)
+        Me.tbxRemoteFileCount.Size = New System.Drawing.Size(99, 23)
         Me.tbxRemoteFileCount.TabIndex = 55
         Me.tbxRemoteFileCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -1700,10 +1700,10 @@ Partial Class frmMain
         Me.tbxStagingTableRows.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.tbxStagingTableRows.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxStagingTableRows.ForeColor = System.Drawing.Color.Black
-        Me.tbxStagingTableRows.Location = New System.Drawing.Point(149, 96)
+        Me.tbxStagingTableRows.Location = New System.Drawing.Point(117, 92)
         Me.tbxStagingTableRows.Name = "tbxStagingTableRows"
         Me.tbxStagingTableRows.ReadOnly = True
-        Me.tbxStagingTableRows.Size = New System.Drawing.Size(73, 23)
+        Me.tbxStagingTableRows.Size = New System.Drawing.Size(94, 23)
         Me.tbxStagingTableRows.TabIndex = 61
         Me.tbxStagingTableRows.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -1713,19 +1713,19 @@ Partial Class frmMain
         Me.Label39.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label39.Location = New System.Drawing.Point(16, 101)
         Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(127, 14)
+        Me.Label39.Size = New System.Drawing.Size(92, 14)
         Me.Label39.TabIndex = 60
-        Me.Label39.Text = "Staging Table rows"
+        Me.Label39.Text = "Staging Table"
         '
         'tbxStreammedXml
         '
         Me.tbxStreammedXml.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.tbxStreammedXml.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxStreammedXml.ForeColor = System.Drawing.Color.Black
-        Me.tbxStreammedXml.Location = New System.Drawing.Point(148, 63)
+        Me.tbxStreammedXml.Location = New System.Drawing.Point(117, 63)
         Me.tbxStreammedXml.Name = "tbxStreammedXml"
         Me.tbxStreammedXml.ReadOnly = True
-        Me.tbxStreammedXml.Size = New System.Drawing.Size(74, 23)
+        Me.tbxStreammedXml.Size = New System.Drawing.Size(92, 23)
         Me.tbxStreammedXml.TabIndex = 59
         Me.tbxStreammedXml.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -1733,7 +1733,7 @@ Partial Class frmMain
         '
         Me.Label38.AutoSize = True
         Me.Label38.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label38.Location = New System.Drawing.Point(19, 67)
+        Me.Label38.Location = New System.Drawing.Point(8, 67)
         Me.Label38.Name = "Label38"
         Me.Label38.Size = New System.Drawing.Size(105, 14)
         Me.Label38.TabIndex = 58
@@ -1744,10 +1744,10 @@ Partial Class frmMain
         Me.tbxSavedXmlCount.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.tbxSavedXmlCount.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxSavedXmlCount.ForeColor = System.Drawing.Color.Black
-        Me.tbxSavedXmlCount.Location = New System.Drawing.Point(148, 30)
+        Me.tbxSavedXmlCount.Location = New System.Drawing.Point(115, 30)
         Me.tbxSavedXmlCount.Name = "tbxSavedXmlCount"
         Me.tbxSavedXmlCount.ReadOnly = True
-        Me.tbxSavedXmlCount.Size = New System.Drawing.Size(74, 23)
+        Me.tbxSavedXmlCount.Size = New System.Drawing.Size(94, 23)
         Me.tbxSavedXmlCount.TabIndex = 57
         Me.tbxSavedXmlCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -1781,7 +1781,7 @@ Partial Class frmMain
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Odds Support Windows Tool"
+        Me.Text = "Odds Mission Control"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
