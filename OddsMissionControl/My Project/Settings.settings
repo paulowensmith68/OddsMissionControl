@@ -5,23 +5,75 @@
     <Setting Name="ProcessLogPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">c:\#myPrograms\OddsMissionControl\logs\</Value>
     </Setting>
-    <Setting Name="MasterServiceLogFname" Type="System.String" Scope="User">
-      <Value Profile="(Default)">c:\#myPrograms\OddsMissionControl\logs\OddsMissionControl_Log_File__2016_04_10.txt</Value>
+    <Setting Name="ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Database=OddsMatching;Data Source=eu-cdbr-azure-north-e.cloudapp.net;User Id=b083cb50265fec;Password=263fb5f7;persistsecurityinfo=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Database=OddsMatching;Data Source=eu-cdbr-azure-north-e.cloudapp.net;User Id=b083cb50265fec;Password=263fb5f7;persistsecurityinfo=True</Value>
     </Setting>
-    <Setting Name="MasterServiceConfigFname" Type="System.String" Scope="User">
-      <Value Profile="(Default)">c:\#myPrograms\OddsMissionControl\program\OddsMissionControl.exe.config</Value>
+    <Setting Name="RemoteFtpServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftp://waws-prod-db3-025.ftp.azurewebsites.windows.net</Value>
     </Setting>
-    <Setting Name="BetFairFeedServiceLogFname" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\#myPrograms\BetFairFeedService\logs\BetFairFeedService_Log_File__&amp;cccc_mm_dd.txt</Value>
+    <Setting Name="RemoteServerUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">WebAppBookmakerFeed20160413071258\paulowensmith19682</Value>
     </Setting>
-    <Setting Name="BetFairFeedServiceConfigFname" Type="System.String" Scope="User">
-      <Value Profile="(Default)">c:\#myPrograms\OddsMissionControl\program&amp;StreamId\BetFairFeedService.exe.config</Value>
+    <Setting Name="RemoteServerPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">PS?pos68</Value>
     </Setting>
-    <Setting Name="DummyServiceLogFname" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\#myPrograms\DummyService\logs\DummyService_Log_File_StreamA_&amp;cccc_mm_dd.txt</Value>
+    <Setting Name="MaxFilesToDownload" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="RemoteFtpPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/site/wwwroot/files/</Value>
+    </Setting>
+    <Setting Name="LocalDownloadPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myFiles\Downloaded\</Value>
     </Setting>
     <Setting Name="DummyServiceConfigFname" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\#myPrograms\DummyService\program\DummyService.exe.config</Value>
+    </Setting>
+    <Setting Name="ConfigEditor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files (x86)\Notepad++\notepad++.exe</Value>
+    </Setting>
+    <Setting Name="DownloadSpocosyFilesServiceConfigFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\DownloadSpocosyFilesService\program\DownloadSpocosyFilesService.exe.config</Value>
+    </Setting>
+    <Setting Name="LoadSpocosyFilesToDbService1ConfigFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\LoadSpocosyFilesToDbService\program1\LoadSpocosyFilesToDbService.exe.config</Value>
+    </Setting>
+    <Setting Name="LoadSpocosyFilesToDbService2ConfigFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\LoadSpocosyFilesToDbService\program2\LoadSpocosyFilesToDbService.exe.config</Value>
+    </Setting>
+    <Setting Name="LoadSpocosyFilesToDbService3ConfigFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\LoadSpocosyFilesToDbService\program3\LoadSpocosyFilesToDbService.exe.config</Value>
+    </Setting>
+    <Setting Name="LoadSpocosyFilesToDbService4ConfigFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\LoadSpocosyFilesToDbService\program4\LoadSpocosyFilesToDbService.exe.config</Value>
+    </Setting>
+    <Setting Name="LoadSpocosyFilesToDbService5ConfigFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\LoadSpocosyFilesToDbService\program5\LoadSpocosyFilesToDbService.exe.config</Value>
+    </Setting>
+    <Setting Name="LoadSpocosyDataServiceAConfgFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\LoadSpocosyDataService\programA\LoadSpocosyDataService.exe.config</Value>
+    </Setting>
+    <Setting Name="LoadSpocosyDataServiceBConfgFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\LoadSpocosyDataService\programB\LoadSpocosyDataService.exe.config</Value>
+    </Setting>
+    <Setting Name="LoadSpocosyDataServiceCConfgFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\LoadSpocosyDataService\programC\LoadSpocosyDataService.exe.config</Value>
+    </Setting>
+    <Setting Name="LoadSpocosyDataServiceDConfgFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\LoadSpocosyDataService\programD\LoadSpocosyDataService.exe.config</Value>
+    </Setting>
+    <Setting Name="LoadSpocosyDataServiceEConfgFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\LoadSpocosyDataService\programE\LoadSpocosyDataService.exe.config</Value>
+    </Setting>
+    <Setting Name="LoadSpocosyDataServiceXConfgFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\LoadSpocosyDataService\programX\LoadSpocosyDataService.exe.config</Value>
+    </Setting>
+    <Setting Name="BetFairFeedServiceConfigFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\BetFairFeedService\program\BetFairFeedService.exe.config</Value>
     </Setting>
   </Settings>
 </SettingsFile>

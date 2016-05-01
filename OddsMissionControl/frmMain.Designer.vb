@@ -22,8 +22,8 @@ Partial Class frmMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.btnViewTransLog = New System.Windows.Forms.Button()
-        Me.btnChangeSettings = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
+        Me.btnDownloadSpocosyFilesServiceSettings = New System.Windows.Forms.Button()
         Me.btnDownloadSpocosyFilesServiceStart = New System.Windows.Forms.Button()
         Me.btnDownloadSpocosyFilesServiceStop = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -38,90 +38,79 @@ Partial Class frmMain
         Me.btnLoadSpocosyFilesToDbService5Start = New System.Windows.Forms.Button()
         Me.tbxLoadSpocosyFilesToDbService5Status = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyFilesToDbService5Stop = New System.Windows.Forms.Button()
-        Me.Button19 = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.Button20 = New System.Windows.Forms.Button()
+        Me.btnLoadSpocosyFilesToDbService5Settings = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.tbxLoadSpocosyFilesToDbService4 = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyFilesToDbService4Start = New System.Windows.Forms.Button()
         Me.tbxLoadSpocosyFilesToDbService4Status = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyFilesToDbService4Stop = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Button16 = New System.Windows.Forms.Button()
+        Me.btnLoadSpocosyFilesToDbService4Settings = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.tbxLoadSpocosyFilesToDbService3 = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyFilesToDbService3Start = New System.Windows.Forms.Button()
         Me.tbxLoadSpocosyFilesToDbService3Status = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyFilesToDbService3Stop = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Button12 = New System.Windows.Forms.Button()
+        Me.btnLoadSpocosyFilesToDbService3Settings = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.tbxLoadSpocosyFilesToDbService2 = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyFilesToDbService2Start = New System.Windows.Forms.Button()
         Me.tbxLoadSpocosyFilesToDbService2Status = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyFilesToDbService2Stop = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Button8 = New System.Windows.Forms.Button()
+        Me.btnLoadSpocosyFilesToDbService2Settings = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.tbxLoadSpocosyFilesToDbService1 = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyFilesToDbService1Start = New System.Windows.Forms.Button()
         Me.tbxLoadSpocosyFilesToDbService1Status = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyFilesToDbService1Stop = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnLoadSpocosyFilesToDbService1Settings = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyDataServiceXStart = New System.Windows.Forms.Button()
         Me.tbxLoadSpocosyDataServiceXStatus = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyDataServiceXStop = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Label33 = New System.Windows.Forms.Label()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.btnLoadSpocosyDataServiceXSettings = New System.Windows.Forms.Button()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyDataServiceEStart = New System.Windows.Forms.Button()
         Me.tbxLoadSpocosyDataServiceEStatus = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyDataServiceEStop = New System.Windows.Forms.Button()
-        Me.Button23 = New System.Windows.Forms.Button()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Button24 = New System.Windows.Forms.Button()
+        Me.btnLoadSpocosyDataServiceESettings = New System.Windows.Forms.Button()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.TextBox15 = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyDataServiceDStart = New System.Windows.Forms.Button()
         Me.tbxLoadSpocosyDataServiceDStatus = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyDataServiceDStop = New System.Windows.Forms.Button()
-        Me.Button27 = New System.Windows.Forms.Button()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.Button28 = New System.Windows.Forms.Button()
+        Me.btnLoadSpocosyDataServiceDSettings = New System.Windows.Forms.Button()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.TextBox17 = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyDataServiceCStart = New System.Windows.Forms.Button()
         Me.tbxLoadSpocosyDataServiceCStatus = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyDataServiceCStop = New System.Windows.Forms.Button()
-        Me.Button31 = New System.Windows.Forms.Button()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.Button32 = New System.Windows.Forms.Button()
+        Me.btnLoadSpocosyDataServiceCSettings = New System.Windows.Forms.Button()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.TextBox19 = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyDataServiceBStart = New System.Windows.Forms.Button()
         Me.tbxLoadSpocosyDataServiceBStatus = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyDataServiceBStop = New System.Windows.Forms.Button()
-        Me.Button35 = New System.Windows.Forms.Button()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.Button36 = New System.Windows.Forms.Button()
+        Me.btnLoadSpocosyDataServiceBSettings = New System.Windows.Forms.Button()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.TextBox21 = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyDataServiceAStart = New System.Windows.Forms.Button()
         Me.tbxLoadSpocosyDataServiceAStatus = New System.Windows.Forms.TextBox()
         Me.btnLoadSpocosyDataServiceAStop = New System.Windows.Forms.Button()
-        Me.Button39 = New System.Windows.Forms.Button()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.Button40 = New System.Windows.Forms.Button()
+        Me.btnLoadSpocosyDataServiceASettings = New System.Windows.Forms.Button()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.TextBox25 = New System.Windows.Forms.TextBox()
@@ -129,15 +118,13 @@ Partial Class frmMain
         Me.Button51 = New System.Windows.Forms.Button()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Button52 = New System.Windows.Forms.Button()
-        Me.Button53 = New System.Windows.Forms.Button()
         Me.TextBox27 = New System.Windows.Forms.TextBox()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.TextBox23 = New System.Windows.Forms.TextBox()
         Me.btnBetFairFeedServiceStart = New System.Windows.Forms.Button()
         Me.btnBetFairFeedServiceStop = New System.Windows.Forms.Button()
         Me.Label25 = New System.Windows.Forms.Label()
-        Me.Button43 = New System.Windows.Forms.Button()
-        Me.Button44 = New System.Windows.Forms.Button()
+        Me.btnBetFairFeedServiceSettings = New System.Windows.Forms.Button()
         Me.tbxBetFairFeedServiceStatus = New System.Windows.Forms.TextBox()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.btnStopAllServices = New System.Windows.Forms.Button()
@@ -148,42 +135,45 @@ Partial Class frmMain
         Me.btnDummyServiceStart = New System.Windows.Forms.Button()
         Me.btnDummyServiceStop = New System.Windows.Forms.Button()
         Me.Label28 = New System.Windows.Forms.Label()
-        Me.btnMonitorServiceNameChangeSettings = New System.Windows.Forms.Button()
-        Me.btnMonitorServiceNameViewLog = New System.Windows.Forms.Button()
+        Me.btnDummyServiceSettings = New System.Windows.Forms.Button()
         Me.tbxDummyServiceStatus = New System.Windows.Forms.TextBox()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.btnStartAll = New System.Windows.Forms.Button()
         Me.btnRefreshStatus = New System.Windows.Forms.Button()
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.rtbRemoteFileList = New System.Windows.Forms.RichTextBox()
+        Me.tbxLocalFileCount = New System.Windows.Forms.TextBox()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.tbxRemoteFileCount = New System.Windows.Forms.TextBox()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.tbxFtpServerConnection = New System.Windows.Forms.TextBox()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.tbxStagingTableRows = New System.Windows.Forms.TextBox()
+        Me.Label39 = New System.Windows.Forms.Label()
+        Me.tbxStreammedXml = New System.Windows.Forms.TextBox()
+        Me.Label38 = New System.Windows.Forms.Label()
+        Me.tbxSavedXmlCount = New System.Windows.Forms.TextBox()
+        Me.Label37 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
+        Me.GroupBox6.SuspendLayout()
+        Me.GroupBox7.SuspendLayout()
         Me.SuspendLayout()
         '
-        'btnViewTransLog
+        'btnDownloadSpocosyFilesServiceSettings
         '
-        Me.btnViewTransLog.BackColor = System.Drawing.SystemColors.Menu
-        Me.btnViewTransLog.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnViewTransLog.Location = New System.Drawing.Point(898, 23)
-        Me.btnViewTransLog.Name = "btnViewTransLog"
-        Me.btnViewTransLog.Size = New System.Drawing.Size(114, 29)
-        Me.btnViewTransLog.TabIndex = 3
-        Me.btnViewTransLog.Text = "View Log"
-        Me.btnViewTransLog.UseVisualStyleBackColor = False
-        Me.btnViewTransLog.Visible = False
-        '
-        'btnChangeSettings
-        '
-        Me.btnChangeSettings.BackColor = System.Drawing.SystemColors.Menu
-        Me.btnChangeSettings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnChangeSettings.Location = New System.Drawing.Point(778, 23)
-        Me.btnChangeSettings.Name = "btnChangeSettings"
-        Me.btnChangeSettings.Size = New System.Drawing.Size(114, 29)
-        Me.btnChangeSettings.TabIndex = 2
-        Me.btnChangeSettings.Text = "Change Settings"
-        Me.btnChangeSettings.UseVisualStyleBackColor = False
-        Me.btnChangeSettings.Visible = False
+        Me.btnDownloadSpocosyFilesServiceSettings.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnDownloadSpocosyFilesServiceSettings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDownloadSpocosyFilesServiceSettings.Location = New System.Drawing.Point(778, 23)
+        Me.btnDownloadSpocosyFilesServiceSettings.Name = "btnDownloadSpocosyFilesServiceSettings"
+        Me.btnDownloadSpocosyFilesServiceSettings.Size = New System.Drawing.Size(114, 29)
+        Me.btnDownloadSpocosyFilesServiceSettings.TabIndex = 2
+        Me.btnDownloadSpocosyFilesServiceSettings.Text = "Change Settings"
+        Me.btnDownloadSpocosyFilesServiceSettings.UseVisualStyleBackColor = False
         '
         'btnDownloadSpocosyFilesServiceStart
         '
@@ -224,15 +214,14 @@ Partial Class frmMain
         Me.GroupBox1.Controls.Add(Me.btnDownloadSpocosyFilesServiceStart)
         Me.GroupBox1.Controls.Add(Me.btnDownloadSpocosyFilesServiceStop)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.btnChangeSettings)
-        Me.GroupBox1.Controls.Add(Me.btnViewTransLog)
+        Me.GroupBox1.Controls.Add(Me.btnDownloadSpocosyFilesServiceSettings)
         Me.GroupBox1.Controls.Add(Me.tbxDownloadSpocosyFilesServiceStatus)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
         Me.GroupBox1.Location = New System.Drawing.Point(45, 180)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1048, 70)
+        Me.GroupBox1.Size = New System.Drawing.Size(917, 70)
         Me.GroupBox1.TabIndex = 51
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Download xml Files"
@@ -289,46 +278,41 @@ Partial Class frmMain
         Me.GroupBox2.Controls.Add(Me.btnLoadSpocosyFilesToDbService5Start)
         Me.GroupBox2.Controls.Add(Me.tbxLoadSpocosyFilesToDbService5Status)
         Me.GroupBox2.Controls.Add(Me.btnLoadSpocosyFilesToDbService5Stop)
-        Me.GroupBox2.Controls.Add(Me.Button19)
         Me.GroupBox2.Controls.Add(Me.Label13)
-        Me.GroupBox2.Controls.Add(Me.Button20)
+        Me.GroupBox2.Controls.Add(Me.btnLoadSpocosyFilesToDbService5Settings)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.tbxLoadSpocosyFilesToDbService4)
         Me.GroupBox2.Controls.Add(Me.btnLoadSpocosyFilesToDbService4Start)
         Me.GroupBox2.Controls.Add(Me.tbxLoadSpocosyFilesToDbService4Status)
         Me.GroupBox2.Controls.Add(Me.btnLoadSpocosyFilesToDbService4Stop)
-        Me.GroupBox2.Controls.Add(Me.Button15)
         Me.GroupBox2.Controls.Add(Me.Label11)
-        Me.GroupBox2.Controls.Add(Me.Button16)
+        Me.GroupBox2.Controls.Add(Me.btnLoadSpocosyFilesToDbService4Settings)
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.tbxLoadSpocosyFilesToDbService3)
         Me.GroupBox2.Controls.Add(Me.btnLoadSpocosyFilesToDbService3Start)
         Me.GroupBox2.Controls.Add(Me.tbxLoadSpocosyFilesToDbService3Status)
         Me.GroupBox2.Controls.Add(Me.btnLoadSpocosyFilesToDbService3Stop)
-        Me.GroupBox2.Controls.Add(Me.Button11)
         Me.GroupBox2.Controls.Add(Me.Label9)
-        Me.GroupBox2.Controls.Add(Me.Button12)
+        Me.GroupBox2.Controls.Add(Me.btnLoadSpocosyFilesToDbService3Settings)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.tbxLoadSpocosyFilesToDbService2)
         Me.GroupBox2.Controls.Add(Me.btnLoadSpocosyFilesToDbService2Start)
         Me.GroupBox2.Controls.Add(Me.tbxLoadSpocosyFilesToDbService2Status)
         Me.GroupBox2.Controls.Add(Me.btnLoadSpocosyFilesToDbService2Stop)
-        Me.GroupBox2.Controls.Add(Me.Button7)
         Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Controls.Add(Me.Button8)
+        Me.GroupBox2.Controls.Add(Me.btnLoadSpocosyFilesToDbService2Settings)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.tbxLoadSpocosyFilesToDbService1)
         Me.GroupBox2.Controls.Add(Me.btnLoadSpocosyFilesToDbService1Start)
         Me.GroupBox2.Controls.Add(Me.tbxLoadSpocosyFilesToDbService1Status)
         Me.GroupBox2.Controls.Add(Me.btnLoadSpocosyFilesToDbService1Stop)
-        Me.GroupBox2.Controls.Add(Me.Button4)
         Me.GroupBox2.Controls.Add(Me.Label5)
-        Me.GroupBox2.Controls.Add(Me.Button3)
+        Me.GroupBox2.Controls.Add(Me.btnLoadSpocosyFilesToDbService1Settings)
         Me.GroupBox2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.GroupBox2.Location = New System.Drawing.Point(45, 261)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1048, 216)
+        Me.GroupBox2.Size = New System.Drawing.Size(917, 216)
         Me.GroupBox2.TabIndex = 52
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Load Files to Database"
@@ -391,18 +375,6 @@ Partial Class frmMain
         Me.btnLoadSpocosyFilesToDbService5Stop.Text = "Stop Service"
         Me.btnLoadSpocosyFilesToDbService5Stop.UseVisualStyleBackColor = False
         '
-        'Button19
-        '
-        Me.Button19.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button19.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button19.Location = New System.Drawing.Point(901, 174)
-        Me.Button19.Name = "Button19"
-        Me.Button19.Size = New System.Drawing.Size(114, 29)
-        Me.Button19.TabIndex = 19
-        Me.Button19.Text = "View Log"
-        Me.Button19.UseVisualStyleBackColor = False
-        Me.Button19.Visible = False
-        '
         'Label13
         '
         Me.Label13.AutoSize = True
@@ -413,17 +385,16 @@ Partial Class frmMain
         Me.Label13.TabIndex = 80
         Me.Label13.Text = "Status"
         '
-        'Button20
+        'btnLoadSpocosyFilesToDbService5Settings
         '
-        Me.Button20.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button20.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button20.Location = New System.Drawing.Point(781, 174)
-        Me.Button20.Name = "Button20"
-        Me.Button20.Size = New System.Drawing.Size(114, 29)
-        Me.Button20.TabIndex = 18
-        Me.Button20.Text = "Change Settings"
-        Me.Button20.UseVisualStyleBackColor = False
-        Me.Button20.Visible = False
+        Me.btnLoadSpocosyFilesToDbService5Settings.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnLoadSpocosyFilesToDbService5Settings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLoadSpocosyFilesToDbService5Settings.Location = New System.Drawing.Point(781, 174)
+        Me.btnLoadSpocosyFilesToDbService5Settings.Name = "btnLoadSpocosyFilesToDbService5Settings"
+        Me.btnLoadSpocosyFilesToDbService5Settings.Size = New System.Drawing.Size(114, 29)
+        Me.btnLoadSpocosyFilesToDbService5Settings.TabIndex = 18
+        Me.btnLoadSpocosyFilesToDbService5Settings.Text = "Change Settings"
+        Me.btnLoadSpocosyFilesToDbService5Settings.UseVisualStyleBackColor = False
         '
         'Label10
         '
@@ -483,18 +454,6 @@ Partial Class frmMain
         Me.btnLoadSpocosyFilesToDbService4Stop.Text = "Stop Service"
         Me.btnLoadSpocosyFilesToDbService4Stop.UseVisualStyleBackColor = False
         '
-        'Button15
-        '
-        Me.Button15.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button15.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button15.Location = New System.Drawing.Point(901, 136)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(114, 29)
-        Me.Button15.TabIndex = 15
-        Me.Button15.Text = "View Log"
-        Me.Button15.UseVisualStyleBackColor = False
-        Me.Button15.Visible = False
-        '
         'Label11
         '
         Me.Label11.AutoSize = True
@@ -505,17 +464,16 @@ Partial Class frmMain
         Me.Label11.TabIndex = 72
         Me.Label11.Text = "Status"
         '
-        'Button16
+        'btnLoadSpocosyFilesToDbService4Settings
         '
-        Me.Button16.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button16.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button16.Location = New System.Drawing.Point(781, 136)
-        Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(114, 29)
-        Me.Button16.TabIndex = 14
-        Me.Button16.Text = "Change Settings"
-        Me.Button16.UseVisualStyleBackColor = False
-        Me.Button16.Visible = False
+        Me.btnLoadSpocosyFilesToDbService4Settings.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnLoadSpocosyFilesToDbService4Settings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLoadSpocosyFilesToDbService4Settings.Location = New System.Drawing.Point(781, 136)
+        Me.btnLoadSpocosyFilesToDbService4Settings.Name = "btnLoadSpocosyFilesToDbService4Settings"
+        Me.btnLoadSpocosyFilesToDbService4Settings.Size = New System.Drawing.Size(114, 29)
+        Me.btnLoadSpocosyFilesToDbService4Settings.TabIndex = 14
+        Me.btnLoadSpocosyFilesToDbService4Settings.Text = "Change Settings"
+        Me.btnLoadSpocosyFilesToDbService4Settings.UseVisualStyleBackColor = False
         '
         'Label8
         '
@@ -575,18 +533,6 @@ Partial Class frmMain
         Me.btnLoadSpocosyFilesToDbService3Stop.Text = "Stop Service"
         Me.btnLoadSpocosyFilesToDbService3Stop.UseVisualStyleBackColor = False
         '
-        'Button11
-        '
-        Me.Button11.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button11.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.Location = New System.Drawing.Point(901, 98)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(114, 29)
-        Me.Button11.TabIndex = 11
-        Me.Button11.Text = "View Log"
-        Me.Button11.UseVisualStyleBackColor = False
-        Me.Button11.Visible = False
-        '
         'Label9
         '
         Me.Label9.AutoSize = True
@@ -597,17 +543,16 @@ Partial Class frmMain
         Me.Label9.TabIndex = 64
         Me.Label9.Text = "Status"
         '
-        'Button12
+        'btnLoadSpocosyFilesToDbService3Settings
         '
-        Me.Button12.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button12.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(781, 98)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(114, 29)
-        Me.Button12.TabIndex = 10
-        Me.Button12.Text = "Change Settings"
-        Me.Button12.UseVisualStyleBackColor = False
-        Me.Button12.Visible = False
+        Me.btnLoadSpocosyFilesToDbService3Settings.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnLoadSpocosyFilesToDbService3Settings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLoadSpocosyFilesToDbService3Settings.Location = New System.Drawing.Point(781, 98)
+        Me.btnLoadSpocosyFilesToDbService3Settings.Name = "btnLoadSpocosyFilesToDbService3Settings"
+        Me.btnLoadSpocosyFilesToDbService3Settings.Size = New System.Drawing.Size(114, 29)
+        Me.btnLoadSpocosyFilesToDbService3Settings.TabIndex = 10
+        Me.btnLoadSpocosyFilesToDbService3Settings.Text = "Change Settings"
+        Me.btnLoadSpocosyFilesToDbService3Settings.UseVisualStyleBackColor = False
         '
         'Label6
         '
@@ -667,18 +612,6 @@ Partial Class frmMain
         Me.btnLoadSpocosyFilesToDbService2Stop.Text = "Stop Service"
         Me.btnLoadSpocosyFilesToDbService2Stop.UseVisualStyleBackColor = False
         '
-        'Button7
-        '
-        Me.Button7.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button7.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(901, 60)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(114, 29)
-        Me.Button7.TabIndex = 7
-        Me.Button7.Text = "View Log"
-        Me.Button7.UseVisualStyleBackColor = False
-        Me.Button7.Visible = False
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -689,17 +622,16 @@ Partial Class frmMain
         Me.Label7.TabIndex = 56
         Me.Label7.Text = "Status"
         '
-        'Button8
+        'btnLoadSpocosyFilesToDbService2Settings
         '
-        Me.Button8.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button8.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(781, 60)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(114, 29)
-        Me.Button8.TabIndex = 6
-        Me.Button8.Text = "Change Settings"
-        Me.Button8.UseVisualStyleBackColor = False
-        Me.Button8.Visible = False
+        Me.btnLoadSpocosyFilesToDbService2Settings.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnLoadSpocosyFilesToDbService2Settings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLoadSpocosyFilesToDbService2Settings.Location = New System.Drawing.Point(781, 60)
+        Me.btnLoadSpocosyFilesToDbService2Settings.Name = "btnLoadSpocosyFilesToDbService2Settings"
+        Me.btnLoadSpocosyFilesToDbService2Settings.Size = New System.Drawing.Size(114, 29)
+        Me.btnLoadSpocosyFilesToDbService2Settings.TabIndex = 6
+        Me.btnLoadSpocosyFilesToDbService2Settings.Text = "Change Settings"
+        Me.btnLoadSpocosyFilesToDbService2Settings.UseVisualStyleBackColor = False
         '
         'Label4
         '
@@ -759,18 +691,6 @@ Partial Class frmMain
         Me.btnLoadSpocosyFilesToDbService1Stop.Text = "Stop Service"
         Me.btnLoadSpocosyFilesToDbService1Stop.UseVisualStyleBackColor = False
         '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button4.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(901, 19)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(114, 29)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "View Log"
-        Me.Button4.UseVisualStyleBackColor = False
-        Me.Button4.Visible = False
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -781,17 +701,16 @@ Partial Class frmMain
         Me.Label5.TabIndex = 48
         Me.Label5.Text = "Status"
         '
-        'Button3
+        'btnLoadSpocosyFilesToDbService1Settings
         '
-        Me.Button3.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button3.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(781, 19)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(114, 29)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Change Settings"
-        Me.Button3.UseVisualStyleBackColor = False
-        Me.Button3.Visible = False
+        Me.btnLoadSpocosyFilesToDbService1Settings.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnLoadSpocosyFilesToDbService1Settings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLoadSpocosyFilesToDbService1Settings.Location = New System.Drawing.Point(781, 19)
+        Me.btnLoadSpocosyFilesToDbService1Settings.Name = "btnLoadSpocosyFilesToDbService1Settings"
+        Me.btnLoadSpocosyFilesToDbService1Settings.Size = New System.Drawing.Size(114, 29)
+        Me.btnLoadSpocosyFilesToDbService1Settings.TabIndex = 2
+        Me.btnLoadSpocosyFilesToDbService1Settings.Text = "Change Settings"
+        Me.btnLoadSpocosyFilesToDbService1Settings.UseVisualStyleBackColor = False
         '
         'GroupBox3
         '
@@ -801,54 +720,48 @@ Partial Class frmMain
         Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceXStart)
         Me.GroupBox3.Controls.Add(Me.tbxLoadSpocosyDataServiceXStatus)
         Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceXStop)
-        Me.GroupBox3.Controls.Add(Me.Button5)
         Me.GroupBox3.Controls.Add(Me.Label33)
-        Me.GroupBox3.Controls.Add(Me.Button6)
+        Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceXSettings)
         Me.GroupBox3.Controls.Add(Me.Label14)
         Me.GroupBox3.Controls.Add(Me.TextBox13)
         Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceEStart)
         Me.GroupBox3.Controls.Add(Me.tbxLoadSpocosyDataServiceEStatus)
         Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceEStop)
-        Me.GroupBox3.Controls.Add(Me.Button23)
         Me.GroupBox3.Controls.Add(Me.Label15)
-        Me.GroupBox3.Controls.Add(Me.Button24)
+        Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceESettings)
         Me.GroupBox3.Controls.Add(Me.Label16)
         Me.GroupBox3.Controls.Add(Me.TextBox15)
         Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceDStart)
         Me.GroupBox3.Controls.Add(Me.tbxLoadSpocosyDataServiceDStatus)
         Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceDStop)
-        Me.GroupBox3.Controls.Add(Me.Button27)
         Me.GroupBox3.Controls.Add(Me.Label17)
-        Me.GroupBox3.Controls.Add(Me.Button28)
+        Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceDSettings)
         Me.GroupBox3.Controls.Add(Me.Label18)
         Me.GroupBox3.Controls.Add(Me.TextBox17)
         Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceCStart)
         Me.GroupBox3.Controls.Add(Me.tbxLoadSpocosyDataServiceCStatus)
         Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceCStop)
-        Me.GroupBox3.Controls.Add(Me.Button31)
         Me.GroupBox3.Controls.Add(Me.Label19)
-        Me.GroupBox3.Controls.Add(Me.Button32)
+        Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceCSettings)
         Me.GroupBox3.Controls.Add(Me.Label20)
         Me.GroupBox3.Controls.Add(Me.TextBox19)
         Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceBStart)
         Me.GroupBox3.Controls.Add(Me.tbxLoadSpocosyDataServiceBStatus)
         Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceBStop)
-        Me.GroupBox3.Controls.Add(Me.Button35)
         Me.GroupBox3.Controls.Add(Me.Label21)
-        Me.GroupBox3.Controls.Add(Me.Button36)
+        Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceBSettings)
         Me.GroupBox3.Controls.Add(Me.Label22)
         Me.GroupBox3.Controls.Add(Me.TextBox21)
         Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceAStart)
         Me.GroupBox3.Controls.Add(Me.tbxLoadSpocosyDataServiceAStatus)
         Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceAStop)
-        Me.GroupBox3.Controls.Add(Me.Button39)
         Me.GroupBox3.Controls.Add(Me.Label23)
-        Me.GroupBox3.Controls.Add(Me.Button40)
+        Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceASettings)
         Me.GroupBox3.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.GroupBox3.Location = New System.Drawing.Point(45, 494)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(1048, 252)
+        Me.GroupBox3.Size = New System.Drawing.Size(917, 252)
         Me.GroupBox3.TabIndex = 53
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Apply Spocosy Data for matching"
@@ -911,18 +824,6 @@ Partial Class frmMain
         Me.btnLoadSpocosyDataServiceXStop.Text = "Stop Service"
         Me.btnLoadSpocosyDataServiceXStop.UseVisualStyleBackColor = False
         '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button5.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(902, 210)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(114, 29)
-        Me.Button5.TabIndex = 86
-        Me.Button5.Text = "View Log"
-        Me.Button5.UseVisualStyleBackColor = False
-        Me.Button5.Visible = False
-        '
         'Label33
         '
         Me.Label33.AutoSize = True
@@ -933,17 +834,16 @@ Partial Class frmMain
         Me.Label33.TabIndex = 88
         Me.Label33.Text = "Status"
         '
-        'Button6
+        'btnLoadSpocosyDataServiceXSettings
         '
-        Me.Button6.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button6.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(782, 210)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(114, 29)
-        Me.Button6.TabIndex = 85
-        Me.Button6.Text = "Change Settings"
-        Me.Button6.UseVisualStyleBackColor = False
-        Me.Button6.Visible = False
+        Me.btnLoadSpocosyDataServiceXSettings.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnLoadSpocosyDataServiceXSettings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLoadSpocosyDataServiceXSettings.Location = New System.Drawing.Point(782, 210)
+        Me.btnLoadSpocosyDataServiceXSettings.Name = "btnLoadSpocosyDataServiceXSettings"
+        Me.btnLoadSpocosyDataServiceXSettings.Size = New System.Drawing.Size(114, 29)
+        Me.btnLoadSpocosyDataServiceXSettings.TabIndex = 85
+        Me.btnLoadSpocosyDataServiceXSettings.Text = "Change Settings"
+        Me.btnLoadSpocosyDataServiceXSettings.UseVisualStyleBackColor = False
         '
         'Label14
         '
@@ -1003,18 +903,6 @@ Partial Class frmMain
         Me.btnLoadSpocosyDataServiceEStop.Text = "Stop Service"
         Me.btnLoadSpocosyDataServiceEStop.UseVisualStyleBackColor = False
         '
-        'Button23
-        '
-        Me.Button23.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button23.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button23.Location = New System.Drawing.Point(901, 174)
-        Me.Button23.Name = "Button23"
-        Me.Button23.Size = New System.Drawing.Size(114, 29)
-        Me.Button23.TabIndex = 78
-        Me.Button23.Text = "View Log"
-        Me.Button23.UseVisualStyleBackColor = False
-        Me.Button23.Visible = False
-        '
         'Label15
         '
         Me.Label15.AutoSize = True
@@ -1025,17 +913,16 @@ Partial Class frmMain
         Me.Label15.TabIndex = 80
         Me.Label15.Text = "Status"
         '
-        'Button24
+        'btnLoadSpocosyDataServiceESettings
         '
-        Me.Button24.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button24.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button24.Location = New System.Drawing.Point(781, 174)
-        Me.Button24.Name = "Button24"
-        Me.Button24.Size = New System.Drawing.Size(114, 29)
-        Me.Button24.TabIndex = 77
-        Me.Button24.Text = "Change Settings"
-        Me.Button24.UseVisualStyleBackColor = False
-        Me.Button24.Visible = False
+        Me.btnLoadSpocosyDataServiceESettings.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnLoadSpocosyDataServiceESettings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLoadSpocosyDataServiceESettings.Location = New System.Drawing.Point(781, 174)
+        Me.btnLoadSpocosyDataServiceESettings.Name = "btnLoadSpocosyDataServiceESettings"
+        Me.btnLoadSpocosyDataServiceESettings.Size = New System.Drawing.Size(114, 29)
+        Me.btnLoadSpocosyDataServiceESettings.TabIndex = 77
+        Me.btnLoadSpocosyDataServiceESettings.Text = "Change Settings"
+        Me.btnLoadSpocosyDataServiceESettings.UseVisualStyleBackColor = False
         '
         'Label16
         '
@@ -1095,18 +982,6 @@ Partial Class frmMain
         Me.btnLoadSpocosyDataServiceDStop.Text = "Stop Service"
         Me.btnLoadSpocosyDataServiceDStop.UseVisualStyleBackColor = False
         '
-        'Button27
-        '
-        Me.Button27.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button27.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button27.Location = New System.Drawing.Point(901, 136)
-        Me.Button27.Name = "Button27"
-        Me.Button27.Size = New System.Drawing.Size(114, 29)
-        Me.Button27.TabIndex = 70
-        Me.Button27.Text = "View Log"
-        Me.Button27.UseVisualStyleBackColor = False
-        Me.Button27.Visible = False
-        '
         'Label17
         '
         Me.Label17.AutoSize = True
@@ -1117,17 +992,16 @@ Partial Class frmMain
         Me.Label17.TabIndex = 72
         Me.Label17.Text = "Status"
         '
-        'Button28
+        'btnLoadSpocosyDataServiceDSettings
         '
-        Me.Button28.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button28.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button28.Location = New System.Drawing.Point(781, 136)
-        Me.Button28.Name = "Button28"
-        Me.Button28.Size = New System.Drawing.Size(114, 29)
-        Me.Button28.TabIndex = 69
-        Me.Button28.Text = "Change Settings"
-        Me.Button28.UseVisualStyleBackColor = False
-        Me.Button28.Visible = False
+        Me.btnLoadSpocosyDataServiceDSettings.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnLoadSpocosyDataServiceDSettings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLoadSpocosyDataServiceDSettings.Location = New System.Drawing.Point(781, 136)
+        Me.btnLoadSpocosyDataServiceDSettings.Name = "btnLoadSpocosyDataServiceDSettings"
+        Me.btnLoadSpocosyDataServiceDSettings.Size = New System.Drawing.Size(114, 29)
+        Me.btnLoadSpocosyDataServiceDSettings.TabIndex = 69
+        Me.btnLoadSpocosyDataServiceDSettings.Text = "Change Settings"
+        Me.btnLoadSpocosyDataServiceDSettings.UseVisualStyleBackColor = False
         '
         'Label18
         '
@@ -1187,18 +1061,6 @@ Partial Class frmMain
         Me.btnLoadSpocosyDataServiceCStop.Text = "Stop Service"
         Me.btnLoadSpocosyDataServiceCStop.UseVisualStyleBackColor = False
         '
-        'Button31
-        '
-        Me.Button31.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button31.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button31.Location = New System.Drawing.Point(901, 98)
-        Me.Button31.Name = "Button31"
-        Me.Button31.Size = New System.Drawing.Size(114, 29)
-        Me.Button31.TabIndex = 62
-        Me.Button31.Text = "View Log"
-        Me.Button31.UseVisualStyleBackColor = False
-        Me.Button31.Visible = False
-        '
         'Label19
         '
         Me.Label19.AutoSize = True
@@ -1209,17 +1071,16 @@ Partial Class frmMain
         Me.Label19.TabIndex = 64
         Me.Label19.Text = "Status"
         '
-        'Button32
+        'btnLoadSpocosyDataServiceCSettings
         '
-        Me.Button32.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button32.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button32.Location = New System.Drawing.Point(781, 98)
-        Me.Button32.Name = "Button32"
-        Me.Button32.Size = New System.Drawing.Size(114, 29)
-        Me.Button32.TabIndex = 61
-        Me.Button32.Text = "Change Settings"
-        Me.Button32.UseVisualStyleBackColor = False
-        Me.Button32.Visible = False
+        Me.btnLoadSpocosyDataServiceCSettings.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnLoadSpocosyDataServiceCSettings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLoadSpocosyDataServiceCSettings.Location = New System.Drawing.Point(781, 98)
+        Me.btnLoadSpocosyDataServiceCSettings.Name = "btnLoadSpocosyDataServiceCSettings"
+        Me.btnLoadSpocosyDataServiceCSettings.Size = New System.Drawing.Size(114, 29)
+        Me.btnLoadSpocosyDataServiceCSettings.TabIndex = 61
+        Me.btnLoadSpocosyDataServiceCSettings.Text = "Change Settings"
+        Me.btnLoadSpocosyDataServiceCSettings.UseVisualStyleBackColor = False
         '
         'Label20
         '
@@ -1279,18 +1140,6 @@ Partial Class frmMain
         Me.btnLoadSpocosyDataServiceBStop.Text = "Stop Service"
         Me.btnLoadSpocosyDataServiceBStop.UseVisualStyleBackColor = False
         '
-        'Button35
-        '
-        Me.Button35.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button35.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button35.Location = New System.Drawing.Point(901, 60)
-        Me.Button35.Name = "Button35"
-        Me.Button35.Size = New System.Drawing.Size(114, 29)
-        Me.Button35.TabIndex = 54
-        Me.Button35.Text = "View Log"
-        Me.Button35.UseVisualStyleBackColor = False
-        Me.Button35.Visible = False
-        '
         'Label21
         '
         Me.Label21.AutoSize = True
@@ -1301,17 +1150,16 @@ Partial Class frmMain
         Me.Label21.TabIndex = 56
         Me.Label21.Text = "Status"
         '
-        'Button36
+        'btnLoadSpocosyDataServiceBSettings
         '
-        Me.Button36.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button36.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button36.Location = New System.Drawing.Point(781, 60)
-        Me.Button36.Name = "Button36"
-        Me.Button36.Size = New System.Drawing.Size(114, 29)
-        Me.Button36.TabIndex = 53
-        Me.Button36.Text = "Change Settings"
-        Me.Button36.UseVisualStyleBackColor = False
-        Me.Button36.Visible = False
+        Me.btnLoadSpocosyDataServiceBSettings.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnLoadSpocosyDataServiceBSettings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLoadSpocosyDataServiceBSettings.Location = New System.Drawing.Point(781, 60)
+        Me.btnLoadSpocosyDataServiceBSettings.Name = "btnLoadSpocosyDataServiceBSettings"
+        Me.btnLoadSpocosyDataServiceBSettings.Size = New System.Drawing.Size(114, 29)
+        Me.btnLoadSpocosyDataServiceBSettings.TabIndex = 53
+        Me.btnLoadSpocosyDataServiceBSettings.Text = "Change Settings"
+        Me.btnLoadSpocosyDataServiceBSettings.UseVisualStyleBackColor = False
         '
         'Label22
         '
@@ -1371,18 +1219,6 @@ Partial Class frmMain
         Me.btnLoadSpocosyDataServiceAStop.Text = "Stop Service"
         Me.btnLoadSpocosyDataServiceAStop.UseVisualStyleBackColor = False
         '
-        'Button39
-        '
-        Me.Button39.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button39.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button39.Location = New System.Drawing.Point(901, 19)
-        Me.Button39.Name = "Button39"
-        Me.Button39.Size = New System.Drawing.Size(114, 29)
-        Me.Button39.TabIndex = 44
-        Me.Button39.Text = "View Log"
-        Me.Button39.UseVisualStyleBackColor = False
-        Me.Button39.Visible = False
-        '
         'Label23
         '
         Me.Label23.AutoSize = True
@@ -1393,17 +1229,16 @@ Partial Class frmMain
         Me.Label23.TabIndex = 48
         Me.Label23.Text = "Status"
         '
-        'Button40
+        'btnLoadSpocosyDataServiceASettings
         '
-        Me.Button40.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button40.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button40.Location = New System.Drawing.Point(781, 19)
-        Me.Button40.Name = "Button40"
-        Me.Button40.Size = New System.Drawing.Size(114, 29)
-        Me.Button40.TabIndex = 43
-        Me.Button40.Text = "Change Settings"
-        Me.Button40.UseVisualStyleBackColor = False
-        Me.Button40.Visible = False
+        Me.btnLoadSpocosyDataServiceASettings.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnLoadSpocosyDataServiceASettings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLoadSpocosyDataServiceASettings.Location = New System.Drawing.Point(781, 19)
+        Me.btnLoadSpocosyDataServiceASettings.Name = "btnLoadSpocosyDataServiceASettings"
+        Me.btnLoadSpocosyDataServiceASettings.Size = New System.Drawing.Size(114, 29)
+        Me.btnLoadSpocosyDataServiceASettings.TabIndex = 43
+        Me.btnLoadSpocosyDataServiceASettings.Text = "Change Settings"
+        Me.btnLoadSpocosyDataServiceASettings.UseVisualStyleBackColor = False
         '
         'GroupBox4
         '
@@ -1414,22 +1249,20 @@ Partial Class frmMain
         Me.GroupBox4.Controls.Add(Me.Button51)
         Me.GroupBox4.Controls.Add(Me.Label31)
         Me.GroupBox4.Controls.Add(Me.Button52)
-        Me.GroupBox4.Controls.Add(Me.Button53)
         Me.GroupBox4.Controls.Add(Me.TextBox27)
         Me.GroupBox4.Controls.Add(Me.Label24)
         Me.GroupBox4.Controls.Add(Me.TextBox23)
         Me.GroupBox4.Controls.Add(Me.btnBetFairFeedServiceStart)
         Me.GroupBox4.Controls.Add(Me.btnBetFairFeedServiceStop)
         Me.GroupBox4.Controls.Add(Me.Label25)
-        Me.GroupBox4.Controls.Add(Me.Button43)
-        Me.GroupBox4.Controls.Add(Me.Button44)
+        Me.GroupBox4.Controls.Add(Me.btnBetFairFeedServiceSettings)
         Me.GroupBox4.Controls.Add(Me.tbxBetFairFeedServiceStatus)
         Me.GroupBox4.Controls.Add(Me.Label26)
         Me.GroupBox4.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.ForeColor = System.Drawing.Color.Black
         Me.GroupBox4.Location = New System.Drawing.Point(45, 763)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(1048, 101)
+        Me.GroupBox4.Size = New System.Drawing.Size(917, 101)
         Me.GroupBox4.TabIndex = 54
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Betfair Matching"
@@ -1501,18 +1334,6 @@ Partial Class frmMain
         Me.Button52.UseVisualStyleBackColor = False
         Me.Button52.Visible = False
         '
-        'Button53
-        '
-        Me.Button53.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button53.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button53.Location = New System.Drawing.Point(898, 59)
-        Me.Button53.Name = "Button53"
-        Me.Button53.Size = New System.Drawing.Size(114, 29)
-        Me.Button53.TabIndex = 54
-        Me.Button53.Text = "View Log"
-        Me.Button53.UseVisualStyleBackColor = False
-        Me.Button53.Visible = False
-        '
         'TextBox27
         '
         Me.TextBox27.BackColor = System.Drawing.Color.AliceBlue
@@ -1523,6 +1344,7 @@ Partial Class frmMain
         Me.TextBox27.Size = New System.Drawing.Size(139, 23)
         Me.TextBox27.TabIndex = 55
         Me.TextBox27.TabStop = False
+        Me.TextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label24
         '
@@ -1580,29 +1402,16 @@ Partial Class frmMain
         Me.Label25.TabIndex = 48
         Me.Label25.Text = "Status"
         '
-        'Button43
+        'btnBetFairFeedServiceSettings
         '
-        Me.Button43.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button43.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button43.Location = New System.Drawing.Point(778, 23)
-        Me.Button43.Name = "Button43"
-        Me.Button43.Size = New System.Drawing.Size(114, 29)
-        Me.Button43.TabIndex = 43
-        Me.Button43.Text = "Change Settings"
-        Me.Button43.UseVisualStyleBackColor = False
-        Me.Button43.Visible = False
-        '
-        'Button44
-        '
-        Me.Button44.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button44.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button44.Location = New System.Drawing.Point(898, 23)
-        Me.Button44.Name = "Button44"
-        Me.Button44.Size = New System.Drawing.Size(114, 29)
-        Me.Button44.TabIndex = 44
-        Me.Button44.Text = "View Log"
-        Me.Button44.UseVisualStyleBackColor = False
-        Me.Button44.Visible = False
+        Me.btnBetFairFeedServiceSettings.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnBetFairFeedServiceSettings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBetFairFeedServiceSettings.Location = New System.Drawing.Point(778, 23)
+        Me.btnBetFairFeedServiceSettings.Name = "btnBetFairFeedServiceSettings"
+        Me.btnBetFairFeedServiceSettings.Size = New System.Drawing.Size(114, 29)
+        Me.btnBetFairFeedServiceSettings.TabIndex = 43
+        Me.btnBetFairFeedServiceSettings.Text = "Change Settings"
+        Me.btnBetFairFeedServiceSettings.UseVisualStyleBackColor = False
         '
         'tbxBetFairFeedServiceStatus
         '
@@ -1614,6 +1423,7 @@ Partial Class frmMain
         Me.tbxBetFairFeedServiceStatus.Size = New System.Drawing.Size(139, 23)
         Me.tbxBetFairFeedServiceStatus.TabIndex = 46
         Me.tbxBetFairFeedServiceStatus.TabStop = False
+        Me.tbxBetFairFeedServiceStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label26
         '
@@ -1629,7 +1439,7 @@ Partial Class frmMain
         Me.btnStopAllServices.BackColor = System.Drawing.Color.LightSalmon
         Me.btnStopAllServices.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStopAllServices.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnStopAllServices.Location = New System.Drawing.Point(207, 18)
+        Me.btnStopAllServices.Location = New System.Drawing.Point(308, 27)
         Me.btnStopAllServices.Name = "btnStopAllServices"
         Me.btnStopAllServices.Size = New System.Drawing.Size(156, 47)
         Me.btnStopAllServices.TabIndex = 3
@@ -1639,10 +1449,10 @@ Partial Class frmMain
         'rtbLog
         '
         Me.rtbLog.Font = New System.Drawing.Font("Verdana", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rtbLog.Location = New System.Drawing.Point(581, 18)
+        Me.rtbLog.Location = New System.Drawing.Point(557, 18)
         Me.rtbLog.Name = "rtbLog"
         Me.rtbLog.ReadOnly = True
-        Me.rtbLog.Size = New System.Drawing.Size(512, 75)
+        Me.rtbLog.Size = New System.Drawing.Size(405, 75)
         Me.rtbLog.TabIndex = 4
         Me.rtbLog.Text = ""
         '
@@ -1654,15 +1464,14 @@ Partial Class frmMain
         Me.GroupBox5.Controls.Add(Me.btnDummyServiceStart)
         Me.GroupBox5.Controls.Add(Me.btnDummyServiceStop)
         Me.GroupBox5.Controls.Add(Me.Label28)
-        Me.GroupBox5.Controls.Add(Me.btnMonitorServiceNameChangeSettings)
-        Me.GroupBox5.Controls.Add(Me.btnMonitorServiceNameViewLog)
+        Me.GroupBox5.Controls.Add(Me.btnDummyServiceSettings)
         Me.GroupBox5.Controls.Add(Me.tbxDummyServiceStatus)
         Me.GroupBox5.Controls.Add(Me.Label29)
         Me.GroupBox5.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox5.ForeColor = System.Drawing.Color.Black
         Me.GroupBox5.Location = New System.Drawing.Point(45, 99)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(1048, 70)
+        Me.GroupBox5.Size = New System.Drawing.Size(917, 70)
         Me.GroupBox5.TabIndex = 61
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Odds Monitor Service"
@@ -1721,29 +1530,16 @@ Partial Class frmMain
         Me.Label28.TabIndex = 48
         Me.Label28.Text = "Status"
         '
-        'btnMonitorServiceNameChangeSettings
+        'btnDummyServiceSettings
         '
-        Me.btnMonitorServiceNameChangeSettings.BackColor = System.Drawing.SystemColors.Menu
-        Me.btnMonitorServiceNameChangeSettings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMonitorServiceNameChangeSettings.Location = New System.Drawing.Point(778, 23)
-        Me.btnMonitorServiceNameChangeSettings.Name = "btnMonitorServiceNameChangeSettings"
-        Me.btnMonitorServiceNameChangeSettings.Size = New System.Drawing.Size(114, 29)
-        Me.btnMonitorServiceNameChangeSettings.TabIndex = 2
-        Me.btnMonitorServiceNameChangeSettings.Text = "Change Settings"
-        Me.btnMonitorServiceNameChangeSettings.UseVisualStyleBackColor = False
-        Me.btnMonitorServiceNameChangeSettings.Visible = False
-        '
-        'btnMonitorServiceNameViewLog
-        '
-        Me.btnMonitorServiceNameViewLog.BackColor = System.Drawing.SystemColors.Menu
-        Me.btnMonitorServiceNameViewLog.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMonitorServiceNameViewLog.Location = New System.Drawing.Point(898, 23)
-        Me.btnMonitorServiceNameViewLog.Name = "btnMonitorServiceNameViewLog"
-        Me.btnMonitorServiceNameViewLog.Size = New System.Drawing.Size(114, 29)
-        Me.btnMonitorServiceNameViewLog.TabIndex = 3
-        Me.btnMonitorServiceNameViewLog.Text = "View Log"
-        Me.btnMonitorServiceNameViewLog.UseVisualStyleBackColor = False
-        Me.btnMonitorServiceNameViewLog.Visible = False
+        Me.btnDummyServiceSettings.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnDummyServiceSettings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDummyServiceSettings.Location = New System.Drawing.Point(778, 23)
+        Me.btnDummyServiceSettings.Name = "btnDummyServiceSettings"
+        Me.btnDummyServiceSettings.Size = New System.Drawing.Size(114, 29)
+        Me.btnDummyServiceSettings.TabIndex = 2
+        Me.btnDummyServiceSettings.Text = "Change Settings"
+        Me.btnDummyServiceSettings.UseVisualStyleBackColor = False
         '
         'tbxDummyServiceStatus
         '
@@ -1770,7 +1566,7 @@ Partial Class frmMain
         Me.btnStartAll.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnStartAll.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStartAll.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnStartAll.Location = New System.Drawing.Point(45, 18)
+        Me.btnStartAll.Location = New System.Drawing.Point(97, 27)
         Me.btnStartAll.Name = "btnStartAll"
         Me.btnStartAll.Size = New System.Drawing.Size(156, 47)
         Me.btnStartAll.TabIndex = 2
@@ -1782,19 +1578,197 @@ Partial Class frmMain
         Me.btnRefreshStatus.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnRefreshStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefreshStatus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnRefreshStatus.Location = New System.Drawing.Point(420, 18)
+        Me.btnRefreshStatus.Location = New System.Drawing.Point(1021, 27)
         Me.btnRefreshStatus.Name = "btnRefreshStatus"
         Me.btnRefreshStatus.Size = New System.Drawing.Size(143, 47)
         Me.btnRefreshStatus.TabIndex = 62
         Me.btnRefreshStatus.Text = "Refresh"
         Me.btnRefreshStatus.UseVisualStyleBackColor = False
         '
+        'GroupBox6
+        '
+        Me.GroupBox6.BackColor = System.Drawing.Color.Linen
+        Me.GroupBox6.Controls.Add(Me.rtbRemoteFileList)
+        Me.GroupBox6.Controls.Add(Me.tbxLocalFileCount)
+        Me.GroupBox6.Controls.Add(Me.Label36)
+        Me.GroupBox6.Controls.Add(Me.tbxRemoteFileCount)
+        Me.GroupBox6.Controls.Add(Me.Label35)
+        Me.GroupBox6.Controls.Add(Me.tbxFtpServerConnection)
+        Me.GroupBox6.Controls.Add(Me.Label34)
+        Me.GroupBox6.Location = New System.Drawing.Point(980, 99)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Size = New System.Drawing.Size(234, 378)
+        Me.GroupBox6.TabIndex = 63
+        Me.GroupBox6.TabStop = False
+        Me.GroupBox6.Text = "Spocosy Pushed Files"
+        '
+        'rtbRemoteFileList
+        '
+        Me.rtbRemoteFileList.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.rtbRemoteFileList.Font = New System.Drawing.Font("Verdana", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtbRemoteFileList.Location = New System.Drawing.Point(22, 76)
+        Me.rtbRemoteFileList.Name = "rtbRemoteFileList"
+        Me.rtbRemoteFileList.ReadOnly = True
+        Me.rtbRemoteFileList.Size = New System.Drawing.Size(189, 205)
+        Me.rtbRemoteFileList.TabIndex = 58
+        Me.rtbRemoteFileList.Text = ""
+        '
+        'tbxLocalFileCount
+        '
+        Me.tbxLocalFileCount.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.tbxLocalFileCount.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxLocalFileCount.ForeColor = System.Drawing.Color.Black
+        Me.tbxLocalFileCount.Location = New System.Drawing.Point(148, 336)
+        Me.tbxLocalFileCount.Name = "tbxLocalFileCount"
+        Me.tbxLocalFileCount.ReadOnly = True
+        Me.tbxLocalFileCount.Size = New System.Drawing.Size(74, 23)
+        Me.tbxLocalFileCount.TabIndex = 57
+        Me.tbxLocalFileCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label36
+        '
+        Me.Label36.AutoSize = True
+        Me.Label36.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label36.Location = New System.Drawing.Point(19, 340)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(71, 14)
+        Me.Label36.TabIndex = 56
+        Me.Label36.Text = "Local Files"
+        '
+        'tbxRemoteFileCount
+        '
+        Me.tbxRemoteFileCount.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.tbxRemoteFileCount.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxRemoteFileCount.ForeColor = System.Drawing.Color.Black
+        Me.tbxRemoteFileCount.Location = New System.Drawing.Point(148, 305)
+        Me.tbxRemoteFileCount.Name = "tbxRemoteFileCount"
+        Me.tbxRemoteFileCount.ReadOnly = True
+        Me.tbxRemoteFileCount.Size = New System.Drawing.Size(74, 23)
+        Me.tbxRemoteFileCount.TabIndex = 55
+        Me.tbxRemoteFileCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label35
+        '
+        Me.Label35.AutoSize = True
+        Me.Label35.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label35.Location = New System.Drawing.Point(19, 309)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(87, 14)
+        Me.Label35.TabIndex = 54
+        Me.Label35.Text = "Remote Files"
+        '
+        'tbxFtpServerConnection
+        '
+        Me.tbxFtpServerConnection.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.tbxFtpServerConnection.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxFtpServerConnection.ForeColor = System.Drawing.Color.Black
+        Me.tbxFtpServerConnection.Location = New System.Drawing.Point(22, 47)
+        Me.tbxFtpServerConnection.Name = "tbxFtpServerConnection"
+        Me.tbxFtpServerConnection.ReadOnly = True
+        Me.tbxFtpServerConnection.Size = New System.Drawing.Size(189, 23)
+        Me.tbxFtpServerConnection.TabIndex = 53
+        Me.tbxFtpServerConnection.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.Location = New System.Drawing.Point(19, 30)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(192, 14)
+        Me.Label34.TabIndex = 52
+        Me.Label34.Text = "Ftp Server Connection Status"
+        '
+        'GroupBox7
+        '
+        Me.GroupBox7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.GroupBox7.Controls.Add(Me.tbxStagingTableRows)
+        Me.GroupBox7.Controls.Add(Me.Label39)
+        Me.GroupBox7.Controls.Add(Me.tbxStreammedXml)
+        Me.GroupBox7.Controls.Add(Me.Label38)
+        Me.GroupBox7.Controls.Add(Me.tbxSavedXmlCount)
+        Me.GroupBox7.Controls.Add(Me.Label37)
+        Me.GroupBox7.Location = New System.Drawing.Point(980, 494)
+        Me.GroupBox7.Name = "GroupBox7"
+        Me.GroupBox7.Size = New System.Drawing.Size(234, 157)
+        Me.GroupBox7.TabIndex = 64
+        Me.GroupBox7.TabStop = False
+        Me.GroupBox7.Text = "Database Counts"
+        '
+        'tbxStagingTableRows
+        '
+        Me.tbxStagingTableRows.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.tbxStagingTableRows.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxStagingTableRows.ForeColor = System.Drawing.Color.Black
+        Me.tbxStagingTableRows.Location = New System.Drawing.Point(149, 96)
+        Me.tbxStagingTableRows.Name = "tbxStagingTableRows"
+        Me.tbxStagingTableRows.ReadOnly = True
+        Me.tbxStagingTableRows.Size = New System.Drawing.Size(73, 23)
+        Me.tbxStagingTableRows.TabIndex = 61
+        Me.tbxStagingTableRows.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label39
+        '
+        Me.Label39.AutoSize = True
+        Me.Label39.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label39.Location = New System.Drawing.Point(16, 101)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(127, 14)
+        Me.Label39.TabIndex = 60
+        Me.Label39.Text = "Staging Table rows"
+        '
+        'tbxStreammedXml
+        '
+        Me.tbxStreammedXml.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.tbxStreammedXml.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxStreammedXml.ForeColor = System.Drawing.Color.Black
+        Me.tbxStreammedXml.Location = New System.Drawing.Point(148, 63)
+        Me.tbxStreammedXml.Name = "tbxStreammedXml"
+        Me.tbxStreammedXml.ReadOnly = True
+        Me.tbxStreammedXml.Size = New System.Drawing.Size(74, 23)
+        Me.tbxStreammedXml.TabIndex = 59
+        Me.tbxStreammedXml.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label38
+        '
+        Me.Label38.AutoSize = True
+        Me.Label38.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label38.Location = New System.Drawing.Point(19, 67)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(105, 14)
+        Me.Label38.TabIndex = 58
+        Me.Label38.Text = "Streammed Xml"
+        '
+        'tbxSavedXmlCount
+        '
+        Me.tbxSavedXmlCount.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.tbxSavedXmlCount.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxSavedXmlCount.ForeColor = System.Drawing.Color.Black
+        Me.tbxSavedXmlCount.Location = New System.Drawing.Point(148, 30)
+        Me.tbxSavedXmlCount.Name = "tbxSavedXmlCount"
+        Me.tbxSavedXmlCount.ReadOnly = True
+        Me.tbxSavedXmlCount.Size = New System.Drawing.Size(74, 23)
+        Me.tbxSavedXmlCount.TabIndex = 57
+        Me.tbxSavedXmlCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label37.Location = New System.Drawing.Point(19, 39)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(72, 14)
+        Me.Label37.TabIndex = 56
+        Me.Label37.Text = "Saved Xml"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightGray
-        Me.ClientSize = New System.Drawing.Size(1141, 878)
+        Me.ClientSize = New System.Drawing.Size(1226, 878)
+        Me.Controls.Add(Me.GroupBox7)
+        Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.btnRefreshStatus)
         Me.Controls.Add(Me.btnStartAll)
         Me.Controls.Add(Me.GroupBox5)
@@ -1804,6 +1778,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Odds Support Windows Tool"
@@ -1817,11 +1792,14 @@ Partial Class frmMain
         Me.GroupBox4.PerformLayout()
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox5.PerformLayout()
+        Me.GroupBox6.ResumeLayout(False)
+        Me.GroupBox6.PerformLayout()
+        Me.GroupBox7.ResumeLayout(False)
+        Me.GroupBox7.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents btnViewTransLog As System.Windows.Forms.Button
-    Friend WithEvents btnChangeSettings As System.Windows.Forms.Button
+    Friend WithEvents btnDownloadSpocosyFilesServiceSettings As System.Windows.Forms.Button
     Friend WithEvents btnDownloadSpocosyFilesServiceStart As System.Windows.Forms.Button
     Friend WithEvents btnDownloadSpocosyFilesServiceStop As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
@@ -1835,90 +1813,79 @@ Partial Class frmMain
     Friend WithEvents btnLoadSpocosyFilesToDbService1Start As System.Windows.Forms.Button
     Friend WithEvents btnLoadSpocosyFilesToDbService1Stop As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents btnLoadSpocosyFilesToDbService1Settings As System.Windows.Forms.Button
     Friend WithEvents tbxLoadSpocosyFilesToDbService1Status As System.Windows.Forms.TextBox
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents tbxLoadSpocosyFilesToDbService5 As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyFilesToDbService5Start As System.Windows.Forms.Button
     Friend WithEvents tbxLoadSpocosyFilesToDbService5Status As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyFilesToDbService5Stop As System.Windows.Forms.Button
-    Friend WithEvents Button19 As System.Windows.Forms.Button
     Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents Button20 As System.Windows.Forms.Button
+    Friend WithEvents btnLoadSpocosyFilesToDbService5Settings As System.Windows.Forms.Button
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents tbxLoadSpocosyFilesToDbService4 As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyFilesToDbService4Start As System.Windows.Forms.Button
     Friend WithEvents tbxLoadSpocosyFilesToDbService4Status As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyFilesToDbService4Stop As System.Windows.Forms.Button
-    Friend WithEvents Button15 As System.Windows.Forms.Button
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents Button16 As System.Windows.Forms.Button
+    Friend WithEvents btnLoadSpocosyFilesToDbService4Settings As System.Windows.Forms.Button
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents tbxLoadSpocosyFilesToDbService3 As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyFilesToDbService3Start As System.Windows.Forms.Button
     Friend WithEvents tbxLoadSpocosyFilesToDbService3Status As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyFilesToDbService3Stop As System.Windows.Forms.Button
-    Friend WithEvents Button11 As System.Windows.Forms.Button
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Button12 As System.Windows.Forms.Button
+    Friend WithEvents btnLoadSpocosyFilesToDbService3Settings As System.Windows.Forms.Button
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents tbxLoadSpocosyFilesToDbService2 As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyFilesToDbService2Start As System.Windows.Forms.Button
     Friend WithEvents tbxLoadSpocosyFilesToDbService2Status As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyFilesToDbService2Stop As System.Windows.Forms.Button
-    Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents btnLoadSpocosyFilesToDbService2Settings As System.Windows.Forms.Button
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents TextBox13 As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyDataServiceEStart As System.Windows.Forms.Button
     Friend WithEvents tbxLoadSpocosyDataServiceEStatus As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyDataServiceEStop As System.Windows.Forms.Button
-    Friend WithEvents Button23 As System.Windows.Forms.Button
     Friend WithEvents Label15 As System.Windows.Forms.Label
-    Friend WithEvents Button24 As System.Windows.Forms.Button
+    Friend WithEvents btnLoadSpocosyDataServiceESettings As System.Windows.Forms.Button
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents TextBox15 As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyDataServiceDStart As System.Windows.Forms.Button
     Friend WithEvents tbxLoadSpocosyDataServiceDStatus As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyDataServiceDStop As System.Windows.Forms.Button
-    Friend WithEvents Button27 As System.Windows.Forms.Button
     Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents Button28 As System.Windows.Forms.Button
+    Friend WithEvents btnLoadSpocosyDataServiceDSettings As System.Windows.Forms.Button
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents TextBox17 As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyDataServiceCStart As System.Windows.Forms.Button
     Friend WithEvents tbxLoadSpocosyDataServiceCStatus As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyDataServiceCStop As System.Windows.Forms.Button
-    Friend WithEvents Button31 As System.Windows.Forms.Button
     Friend WithEvents Label19 As System.Windows.Forms.Label
-    Friend WithEvents Button32 As System.Windows.Forms.Button
+    Friend WithEvents btnLoadSpocosyDataServiceCSettings As System.Windows.Forms.Button
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents TextBox19 As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyDataServiceBStart As System.Windows.Forms.Button
     Friend WithEvents tbxLoadSpocosyDataServiceBStatus As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyDataServiceBStop As System.Windows.Forms.Button
-    Friend WithEvents Button35 As System.Windows.Forms.Button
     Friend WithEvents Label21 As System.Windows.Forms.Label
-    Friend WithEvents Button36 As System.Windows.Forms.Button
+    Friend WithEvents btnLoadSpocosyDataServiceBSettings As System.Windows.Forms.Button
     Friend WithEvents Label22 As System.Windows.Forms.Label
     Friend WithEvents TextBox21 As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyDataServiceAStart As System.Windows.Forms.Button
     Friend WithEvents tbxLoadSpocosyDataServiceAStatus As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadSpocosyDataServiceAStop As System.Windows.Forms.Button
-    Friend WithEvents Button39 As System.Windows.Forms.Button
     Friend WithEvents Label23 As System.Windows.Forms.Label
-    Friend WithEvents Button40 As System.Windows.Forms.Button
+    Friend WithEvents btnLoadSpocosyDataServiceASettings As System.Windows.Forms.Button
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents Label24 As System.Windows.Forms.Label
     Friend WithEvents TextBox23 As System.Windows.Forms.TextBox
     Friend WithEvents btnBetFairFeedServiceStart As System.Windows.Forms.Button
     Friend WithEvents btnBetFairFeedServiceStop As System.Windows.Forms.Button
     Friend WithEvents Label25 As System.Windows.Forms.Label
-    Friend WithEvents Button43 As System.Windows.Forms.Button
-    Friend WithEvents Button44 As System.Windows.Forms.Button
+    Friend WithEvents btnBetFairFeedServiceSettings As System.Windows.Forms.Button
     Friend WithEvents tbxBetFairFeedServiceStatus As System.Windows.Forms.TextBox
     Friend WithEvents Label26 As System.Windows.Forms.Label
     Friend WithEvents btnStopAllServices As System.Windows.Forms.Button
@@ -1929,8 +1896,7 @@ Partial Class frmMain
     Friend WithEvents btnDummyServiceStart As System.Windows.Forms.Button
     Friend WithEvents btnDummyServiceStop As System.Windows.Forms.Button
     Friend WithEvents Label28 As System.Windows.Forms.Label
-    Friend WithEvents btnMonitorServiceNameChangeSettings As System.Windows.Forms.Button
-    Friend WithEvents btnMonitorServiceNameViewLog As System.Windows.Forms.Button
+    Friend WithEvents btnDummyServiceSettings As System.Windows.Forms.Button
     Friend WithEvents tbxDummyServiceStatus As System.Windows.Forms.TextBox
     Friend WithEvents Label29 As System.Windows.Forms.Label
     Friend WithEvents Label30 As Label
@@ -1939,7 +1905,6 @@ Partial Class frmMain
     Friend WithEvents Button51 As Button
     Friend WithEvents Label31 As Label
     Friend WithEvents Button52 As Button
-    Friend WithEvents Button53 As Button
     Friend WithEvents TextBox27 As TextBox
     Friend WithEvents btnStartAll As Button
     Friend WithEvents TextBox2 As TextBox
@@ -1949,7 +1914,21 @@ Partial Class frmMain
     Friend WithEvents btnLoadSpocosyDataServiceXStart As Button
     Friend WithEvents tbxLoadSpocosyDataServiceXStatus As TextBox
     Friend WithEvents btnLoadSpocosyDataServiceXStop As Button
-    Friend WithEvents Button5 As Button
     Friend WithEvents Label33 As Label
-    Friend WithEvents Button6 As Button
+    Friend WithEvents btnLoadSpocosyDataServiceXSettings As Button
+    Friend WithEvents GroupBox6 As GroupBox
+    Friend WithEvents GroupBox7 As GroupBox
+    Friend WithEvents tbxLocalFileCount As TextBox
+    Friend WithEvents Label36 As Label
+    Friend WithEvents tbxRemoteFileCount As TextBox
+    Friend WithEvents Label35 As Label
+    Friend WithEvents tbxFtpServerConnection As TextBox
+    Friend WithEvents Label34 As Label
+    Friend WithEvents rtbRemoteFileList As RichTextBox
+    Friend WithEvents tbxSavedXmlCount As TextBox
+    Friend WithEvents Label37 As Label
+    Friend WithEvents tbxStreammedXml As TextBox
+    Friend WithEvents Label38 As Label
+    Friend WithEvents tbxStagingTableRows As TextBox
+    Friend WithEvents Label39 As Label
 End Class

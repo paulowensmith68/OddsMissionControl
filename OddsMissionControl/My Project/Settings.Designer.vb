@@ -66,65 +66,86 @@ Namespace My
             End Set
         End Property
         
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Database=OddsMatching;Data Source=eu-cdbr-azure-north-e.cloudapp.net;User Id=b083"& _ 
+            "cb50265fec;Password=263fb5f7;persistsecurityinfo=True")>  _
+        Public ReadOnly Property ConnectionString() As String
+            Get
+                Return CType(Me("ConnectionString"),String)
+            End Get
+        End Property
+        
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("c:\#myPrograms\OddsMissionControl\logs\OddsMissionControl_Log_File__2016_04_10.tx"& _ 
-            "t")>  _
-        Public Property MasterServiceLogFname() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("ftp://waws-prod-db3-025.ftp.azurewebsites.windows.net")>  _
+        Public Property RemoteFtpServer() As String
             Get
-                Return CType(Me("MasterServiceLogFname"),String)
+                Return CType(Me("RemoteFtpServer"),String)
             End Get
             Set
-                Me("MasterServiceLogFname") = value
+                Me("RemoteFtpServer") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("c:\#myPrograms\OddsMissionControl\program\OddsMissionControl.exe.config")>  _
-        Public Property MasterServiceConfigFname() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("WebAppBookmakerFeed20160413071258\paulowensmith19682")>  _
+        Public Property RemoteServerUser() As String
             Get
-                Return CType(Me("MasterServiceConfigFname"),String)
+                Return CType(Me("RemoteServerUser"),String)
             End Get
             Set
-                Me("MasterServiceConfigFname") = value
+                Me("RemoteServerUser") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\BetFairFeedService\logs\BetFairFeedService_Log_File__&cccc_mm_dd.t"& _ 
-            "xt")>  _
-        Public Property BetFairFeedServiceLogFname() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("PS?pos68")>  _
+        Public Property RemoteServerPassword() As String
             Get
-                Return CType(Me("BetFairFeedServiceLogFname"),String)
+                Return CType(Me("RemoteServerPassword"),String)
             End Get
             Set
-                Me("BetFairFeedServiceLogFname") = value
+                Me("RemoteServerPassword") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("c:\#myPrograms\OddsMissionControl\program&StreamId\BetFairFeedService.exe.config")>  _
-        Public Property BetFairFeedServiceConfigFname() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("10")>  _
+        Public Property MaxFilesToDownload() As Integer
             Get
-                Return CType(Me("BetFairFeedServiceConfigFname"),String)
+                Return CType(Me("MaxFilesToDownload"),Integer)
             End Get
             Set
-                Me("BetFairFeedServiceConfigFname") = value
+                Me("MaxFilesToDownload") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\DummyService\logs\DummyService_Log_File_StreamA_&cccc_mm_dd.txt")>  _
-        Public Property DummyServiceLogFname() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("/site/wwwroot/files/")>  _
+        Public Property RemoteFtpPath() As String
             Get
-                Return CType(Me("DummyServiceLogFname"),String)
+                Return CType(Me("RemoteFtpPath"),String)
             End Get
             Set
-                Me("DummyServiceLogFname") = value
+                Me("RemoteFtpPath") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myFiles\Downloaded\")>  _
+        Public Property LocalDownloadPath() As String
+            Get
+                Return CType(Me("LocalDownloadPath"),String)
+            End Get
+            Set
+                Me("LocalDownloadPath") = value
             End Set
         End Property
         
@@ -137,6 +158,180 @@ Namespace My
             End Get
             Set
                 Me("DummyServiceConfigFname") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\Program Files (x86)\Notepad++\notepad++.exe")>  _
+        Public Property ConfigEditor() As String
+            Get
+                Return CType(Me("ConfigEditor"),String)
+            End Get
+            Set
+                Me("ConfigEditor") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\DownloadSpocosyFilesService\program\DownloadSpocosyFilesService.ex"& _ 
+            "e.config")>  _
+        Public Property DownloadSpocosyFilesServiceConfigFname() As String
+            Get
+                Return CType(Me("DownloadSpocosyFilesServiceConfigFname"),String)
+            End Get
+            Set
+                Me("DownloadSpocosyFilesServiceConfigFname") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\LoadSpocosyFilesToDbService\program1\LoadSpocosyFilesToDbService.e"& _ 
+            "xe.config")>  _
+        Public Property LoadSpocosyFilesToDbService1ConfigFname() As String
+            Get
+                Return CType(Me("LoadSpocosyFilesToDbService1ConfigFname"),String)
+            End Get
+            Set
+                Me("LoadSpocosyFilesToDbService1ConfigFname") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\LoadSpocosyFilesToDbService\program2\LoadSpocosyFilesToDbService.e"& _ 
+            "xe.config")>  _
+        Public Property LoadSpocosyFilesToDbService2ConfigFname() As String
+            Get
+                Return CType(Me("LoadSpocosyFilesToDbService2ConfigFname"),String)
+            End Get
+            Set
+                Me("LoadSpocosyFilesToDbService2ConfigFname") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\LoadSpocosyFilesToDbService\program3\LoadSpocosyFilesToDbService.e"& _ 
+            "xe.config")>  _
+        Public Property LoadSpocosyFilesToDbService3ConfigFname() As String
+            Get
+                Return CType(Me("LoadSpocosyFilesToDbService3ConfigFname"),String)
+            End Get
+            Set
+                Me("LoadSpocosyFilesToDbService3ConfigFname") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\LoadSpocosyFilesToDbService\program4\LoadSpocosyFilesToDbService.e"& _ 
+            "xe.config")>  _
+        Public Property LoadSpocosyFilesToDbService4ConfigFname() As String
+            Get
+                Return CType(Me("LoadSpocosyFilesToDbService4ConfigFname"),String)
+            End Get
+            Set
+                Me("LoadSpocosyFilesToDbService4ConfigFname") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\LoadSpocosyFilesToDbService\program5\LoadSpocosyFilesToDbService.e"& _ 
+            "xe.config")>  _
+        Public Property LoadSpocosyFilesToDbService5ConfigFname() As String
+            Get
+                Return CType(Me("LoadSpocosyFilesToDbService5ConfigFname"),String)
+            End Get
+            Set
+                Me("LoadSpocosyFilesToDbService5ConfigFname") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\LoadSpocosyDataService\programA\LoadSpocosyDataService.exe.config")>  _
+        Public Property LoadSpocosyDataServiceAConfgFname() As String
+            Get
+                Return CType(Me("LoadSpocosyDataServiceAConfgFname"),String)
+            End Get
+            Set
+                Me("LoadSpocosyDataServiceAConfgFname") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\LoadSpocosyDataService\programB\LoadSpocosyDataService.exe.config")>  _
+        Public Property LoadSpocosyDataServiceBConfgFname() As String
+            Get
+                Return CType(Me("LoadSpocosyDataServiceBConfgFname"),String)
+            End Get
+            Set
+                Me("LoadSpocosyDataServiceBConfgFname") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\LoadSpocosyDataService\programC\LoadSpocosyDataService.exe.config")>  _
+        Public Property LoadSpocosyDataServiceCConfgFname() As String
+            Get
+                Return CType(Me("LoadSpocosyDataServiceCConfgFname"),String)
+            End Get
+            Set
+                Me("LoadSpocosyDataServiceCConfgFname") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\LoadSpocosyDataService\programD\LoadSpocosyDataService.exe.config")>  _
+        Public Property LoadSpocosyDataServiceDConfgFname() As String
+            Get
+                Return CType(Me("LoadSpocosyDataServiceDConfgFname"),String)
+            End Get
+            Set
+                Me("LoadSpocosyDataServiceDConfgFname") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\LoadSpocosyDataService\programE\LoadSpocosyDataService.exe.config")>  _
+        Public Property LoadSpocosyDataServiceEConfgFname() As String
+            Get
+                Return CType(Me("LoadSpocosyDataServiceEConfgFname"),String)
+            End Get
+            Set
+                Me("LoadSpocosyDataServiceEConfgFname") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\LoadSpocosyDataService\programX\LoadSpocosyDataService.exe.config")>  _
+        Public Property LoadSpocosyDataServiceXConfgFname() As String
+            Get
+                Return CType(Me("LoadSpocosyDataServiceXConfgFname"),String)
+            End Get
+            Set
+                Me("LoadSpocosyDataServiceXConfgFname") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\BetFairFeedService\program\BetFairFeedService.exe.config")>  _
+        Public Property BetFairFeedServiceConfigFname() As String
+            Get
+                Return CType(Me("BetFairFeedServiceConfigFname"),String)
+            End Get
+            Set
+                Me("BetFairFeedServiceConfigFname") = value
             End Set
         End Property
     End Class

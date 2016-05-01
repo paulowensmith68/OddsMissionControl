@@ -1,4 +1,6 @@
-﻿Public Class frmMain
+﻿Imports MySql.Data.MySqlClient
+
+Public Class frmMain
 
     Private Sub frmMain_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
@@ -6,7 +8,7 @@
         myServiceNames = New List(Of String)()
 
         ' Test
-        ' myServiceNames.Add("DummyService")
+        'myServiceNames.Add("DummyService")
 
         ' Live
         'myServiceNames.Add("OddsMonitorService")
@@ -36,6 +38,13 @@
         For Each service In OddsServiceList
             UpdateButtons(service)
         Next
+
+        ' Update Remote File Status
+        CheckFileStatus()
+
+        ' Database counts
+        DatabaseCounts()
+
 
     End Sub
 
@@ -205,5 +214,163 @@
 
         Next
 
+        ' Update Remote File Status
+        CheckFileStatus()
+
+        ' Database counts
+        DatabaseCounts()
+
     End Sub
+
+    Private Sub btnMonitorServiceNameChangeSettings_Click(sender As Object, e As EventArgs) Handles btnDummyServiceSettings.Click, btnDownloadSpocosyFilesServiceSettings.Click,
+      btnLoadSpocosyFilesToDbService1Settings.Click, btnLoadSpocosyFilesToDbService2Settings.Click, btnLoadSpocosyFilesToDbService3Settings.Click, btnLoadSpocosyFilesToDbService4Settings.Click,
+      btnLoadSpocosyFilesToDbService5Settings.Click, btnLoadSpocosyDataServiceASettings.Click, btnLoadSpocosyDataServiceBSettings.Click, btnLoadSpocosyDataServiceCSettings.Click,
+      btnLoadSpocosyDataServiceDSettings.Click, btnLoadSpocosyDataServiceESettings.Click, btnLoadSpocosyDataServiceXSettings.Click, btnBetFairFeedServiceSettings.Click
+
+        Dim strServiceName As String
+        strServiceName = sender.Name.Replace("btn", "").Replace("Settings", "")
+
+        For Each service In OddsServiceList
+
+            If service.strServiceName = strServiceName Then
+
+                service.OpenSettings()
+
+            End If
+        Next
+
+    End Sub
+
+    Public Sub CheckFileStatus()
+
+        Dim ftp As FTP
+        Dim RFN As String = My.Settings.RemoteFtpServer + My.Settings.RemoteFtpPath
+        Dim LFN As String = My.Settings.LocalDownloadPath
+
+
+        ' Check remote files by connecting to server
+        Try
+
+            ' Connect
+            ftp = New FTP(My.Settings.RemoteServerUser, My.Settings.RemoteServerPassword)
+
+            tbxFtpServerConnection.BackColor = Color.PaleGreen
+            tbxFtpServerConnection.ForeColor = Color.Black
+            tbxFtpServerConnection.Text = "Connection ok"
+
+        Catch ex As Exception
+
+            tbxFtpServerConnection.BackColor = Color.Red
+            tbxFtpServerConnection.ForeColor = Color.White
+            tbxFtpServerConnection.Text = "Connection Failed"
+            Exit Sub
+        End Try
+
+        ' Clear
+        rtbRemoteFileList.Clear()
+        Dim fileCount As Integer
+
+        Dim remoteFileList As List(Of String) = ftp.GetDirectory(RFN)
+        For Each file In remoteFileList
+            If file.Contains(".xml") Then
+                fileCount = fileCount + 1
+                rtbRemoteFileList.AppendText(file + vbCrLf)
+                rtbRemoteFileList.ScrollToCaret()
+            End If
+        Next
+
+        ' Populate count
+        tbxRemoteFileCount.Text = fileCount.ToString("N0")
+
+        ' Get local file count
+        Dim counter = My.Computer.FileSystem.GetFiles(LFN)
+        tbxLocalFileCount.Text = counter.Count.ToString("N0")
+
+    End Sub
+
+    Public Sub DatabaseCounts()
+
+        ' Populate counts
+        tbxSavedXmlCount.Text = CountSavedXmlRows().ToString("N0")
+        tbxStreammedXml.Text = CountSavedStreammedXmlRows().ToString("N0")
+        tbxStagingTableRows.Text = CountBookmakerXmlNodesRows().ToString("N0")
+
+
+    End Sub
+
+    Public Function CountSavedXmlRows() As Integer
+
+        Dim countRows As Integer = 0
+        Dim myConnection As New MySqlConnection(My.Settings.ConnectionString)
+        Dim myCommand As New MySqlCommand("SELECT count(*) FROM oddsmatching.saved_xml")
+        myCommand.CommandType = CommandType.Text
+        myCommand.Connection = myConnection
+
+        Try
+
+            myConnection.Open()
+            countRows = Convert.ToInt64(myCommand.ExecuteScalar())
+
+        Catch ex As Exception
+
+        Finally
+
+            myConnection.Close()
+
+        End Try
+
+        Return countRows
+
+    End Function
+
+    Public Function CountSavedStreammedXmlRows() As Integer
+
+        Dim countRows As Integer = 0
+        Dim myConnection As New MySqlConnection(My.Settings.ConnectionString)
+        Dim myCommand As New MySqlCommand("SELECT count(*) FROM oddsmatching.saved_streammed_xml")
+        myCommand.CommandType = CommandType.Text
+        myCommand.Connection = myConnection
+
+        Try
+
+            myConnection.Open()
+            countRows = Convert.ToInt64(myCommand.ExecuteScalar())
+
+        Catch ex As Exception
+
+        Finally
+
+            myConnection.Close()
+
+        End Try
+
+        Return countRows
+
+    End Function
+
+    Public Function CountBookmakerXmlNodesRows() As Integer
+
+        Dim countRows As Integer = 0
+        Dim myConnection As New MySqlConnection(My.Settings.ConnectionString)
+        Dim myCommand As New MySqlCommand("SELECT count(*) FROM oddsmatching.bookmaker_xml_nodes;")
+        myCommand.CommandType = CommandType.Text
+        myCommand.Connection = myConnection
+
+        Try
+
+            myConnection.Open()
+            countRows = Convert.ToInt64(myCommand.ExecuteScalar())
+
+        Catch ex As Exception
+
+        Finally
+
+            myConnection.Close()
+
+        End Try
+
+        Return countRows
+
+    End Function
+
 End Class

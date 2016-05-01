@@ -3,8 +3,7 @@
 Public Class OddsServiceClass
 
     Public strServiceName As String
-    Public strLogPath As String
-    Public strInstallPath As String
+    Public strConfigPath As String
     Public strStatus As String
 
 
@@ -16,16 +15,46 @@ Public Class OddsServiceClass
         Select Case serviceName
 
             Case "DummyService"
-                strLogPath = My.Settings.DummyServiceLogFname
-                strInstallPath = My.Settings.DummyServiceConfigFname
+                strConfigPath = My.Settings.DummyServiceConfigFname
 
-                'Case "OddsMonitorService"
-                '    strLogPath = My.Settings.MasterServiceLogFname
-                '    strInstallPath = My.Settings.MasterServiceConfigFname
+            Case "DownloadSpocosyFilesService"
+                strConfigPath = My.Settings.DownloadSpocosyFilesServiceConfigFname
 
-                'Case "BetFairFeedService"
-                '    strLogPath = My.Settings.BetFairFeedServiceLogFname
-                '    strInstallPath = My.Settings.BetFairFeedServiceConfigFname
+            Case "LoadSpocosyFilesToDbService1"
+                strConfigPath = My.Settings.LoadSpocosyFilesToDbService1ConfigFname
+
+            Case "LoadSpocosyFilesToDbService2"
+                strConfigPath = My.Settings.LoadSpocosyFilesToDbService2ConfigFname
+
+            Case "LoadSpocosyFilesToDbService3"
+                strConfigPath = My.Settings.LoadSpocosyFilesToDbService3ConfigFname
+
+            Case "LoadSpocosyFilesToDbService4"
+                strConfigPath = My.Settings.LoadSpocosyFilesToDbService4ConfigFname
+
+            Case "LoadSpocosyFilesToDbService5"
+                strConfigPath = My.Settings.LoadSpocosyFilesToDbService5ConfigFname
+
+            Case "LoadSpocosyDataServiceA"
+                strConfigPath = My.Settings.LoadSpocosyDataServiceAConfgFname
+
+            Case "LoadSpocosyDataServiceB"
+                strConfigPath = My.Settings.LoadSpocosyDataServiceBConfgFname
+
+            Case "LoadSpocosyDataServiceC"
+                strConfigPath = My.Settings.LoadSpocosyDataServiceCConfgFname
+
+            Case "LoadSpocosyDataServiceD"
+                strConfigPath = My.Settings.LoadSpocosyDataServiceDConfgFname
+
+            Case "LoadSpocosyDataServiceE"
+                strConfigPath = My.Settings.LoadSpocosyDataServiceEConfgFname
+
+            Case "LoadSpocosyDataServiceX"
+                strConfigPath = My.Settings.LoadSpocosyDataServiceXConfgFname
+
+            Case "BetFairFeedService"
+                strConfigPath = My.Settings.BetFairFeedServiceConfigFname
 
         End Select
 
@@ -118,4 +147,10 @@ Public Class OddsServiceClass
         End Try
 
     End Sub
+
+    Public Function OpenSettings() As Boolean
+        System.Diagnostics.Process.Start(My.Settings.ConfigEditor, Me.strConfigPath)
+        Return True
+    End Function
+
 End Class
