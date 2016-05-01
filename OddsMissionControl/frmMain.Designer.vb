@@ -1652,7 +1652,7 @@ Partial Class frmMain
         '
         'Timer1
         '
-        Me.Timer1.Interval = 10000
+        Me.Timer1.Interval = 5000
         '
         'btnRefreshAutoOff
         '
@@ -1664,7 +1664,7 @@ Partial Class frmMain
         Me.btnRefreshAutoOff.Name = "btnRefreshAutoOff"
         Me.btnRefreshAutoOff.Size = New System.Drawing.Size(121, 27)
         Me.btnRefreshAutoOff.TabIndex = 65
-        Me.btnRefreshAutoOff.Text = "Refresh Auto On"
+        Me.btnRefreshAutoOff.Text = "Refresh Auto Off"
         Me.btnRefreshAutoOff.UseVisualStyleBackColor = False
         '
         'btnRefreshAutoOn

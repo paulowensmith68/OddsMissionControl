@@ -81,6 +81,11 @@ Public Class frmMain
       btnLoadSpocosyFilesToDbService5Start.Click, btnLoadSpocosyDataServiceAStart.Click, btnLoadSpocosyDataServiceBStart.Click, btnLoadSpocosyDataServiceCStart.Click,
       btnLoadSpocosyDataServiceDStart.Click, btnLoadSpocosyDataServiceEStart.Click, btnLoadSpocosyDataServiceXStart.Click, btnBetFairFeedServiceStart.Click
 
+        ' Disable the timer
+        If Timer1.Enabled Then
+            Me.btnRefreshAutoOff_Click(sender, e)
+        End If
+
         ' Check status first
         Dim strServiceName As String
         strServiceName = sender.Name.Replace("btn", "").Replace("Start", "")
@@ -111,6 +116,11 @@ Public Class frmMain
       btnLoadSpocosyFilesToDbService5Stop.Click, btnLoadSpocosyDataServiceAStop.Click, btnLoadSpocosyDataServiceBStop.Click, btnLoadSpocosyDataServiceCStop.Click,
       btnLoadSpocosyDataServiceDStop.Click, btnLoadSpocosyDataServiceEStop.Click, btnLoadSpocosyDataServiceXStop.Click, btnBetFairFeedServiceStop.Click
 
+        ' Disable the timer
+        If Timer1.Enabled Then
+            Me.btnRefreshAutoOff_Click(sender, e)
+        End If
+
         ' Check status first
         Dim strServiceName As String
         strServiceName = sender.Name.Replace("btn", "").Replace("Stop", "")
@@ -135,6 +145,11 @@ Public Class frmMain
     End Sub
 
     Private Sub btnStartAll_Click(sender As Object, e As EventArgs) Handles btnStartAll.Click
+
+        ' Disable the timer
+        If Timer1.Enabled Then
+            Me.btnRefreshAutoOff_Click(sender, e)
+        End If
 
         ' Confirm
         Dim result As Integer = MsgBox("Are you sure you want to Start all services?", MsgBoxStyle.YesNo, "Confirmation")
@@ -169,6 +184,11 @@ Public Class frmMain
     End Sub
 
     Private Sub btnStopAllServices_Click(sender As Object, e As EventArgs) Handles btnStopAllServices.Click
+
+        ' Disable the timer
+        If Timer1.Enabled Then
+            Me.btnRefreshAutoOff_Click(sender, e)
+        End If
 
         ' Confirm
         Dim result As Integer = MsgBox("Are you sure you want to Stop all services?", MsgBoxStyle.YesNo, "Confirmation")
