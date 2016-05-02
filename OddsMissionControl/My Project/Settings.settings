@@ -65,8 +65,8 @@
     <Setting Name="LoadSpocosyDataServiceXConfgFname" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\#myPrograms\LoadSpocosyDataService\programX\LoadSpocosyDataService.exe.config</Value>
     </Setting>
-    <Setting Name="BetFairFeedServiceConfigFname" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\#myPrograms\BetFairFeedService\program\BetFairFeedService.exe.config</Value>
+    <Setting Name="BetFairFeedService1ConfigFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\BetFairFeedService\program1\BetFairFeedService.exe.config</Value>
     </Setting>
     <Setting Name="ConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
@@ -74,6 +74,12 @@
   &lt;ConnectionString&gt;Database=OddsMatching;Data Source=eu-cdbr-azure-north-e.cloudapp.net;User Id=b083cb50265fec;Password=263fb5f7&lt;/ConnectionString&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Database=OddsMatching;Data Source=eu-cdbr-azure-north-e.cloudapp.net;User Id=b083cb50265fec;Password=263fb5f7</Value>
+    </Setting>
+    <Setting Name="BetFairFeedService2ConfigFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\BetFairFeedService\program2\BetFairFeedService.exe.config</Value>
+    </Setting>
+    <Setting Name="HousekeepStagingServiceConfigFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\HousekeepStagingService\program\HousekeepStagingService.exe.config</Value>
     </Setting>
   </Settings>
 </SettingsFile>

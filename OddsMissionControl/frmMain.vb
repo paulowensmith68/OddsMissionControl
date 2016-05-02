@@ -24,7 +24,9 @@ Public Class frmMain
         myServiceNames.Add("LoadSpocosyDataServiceD")
         myServiceNames.Add("LoadSpocosyDataServiceE")
         myServiceNames.Add("LoadSpocosyDataServiceX")
-        myServiceNames.Add("BetFairFeedService")
+        myServiceNames.Add("BetFairFeedService1")
+        myServiceNames.Add("BetFairFeedService2")
+        myServiceNames.Add("HousekeepStagingService")
 
         ' Loop through each service object to create the list
         For Each strName In myServiceNames
@@ -79,7 +81,7 @@ Public Class frmMain
     Private Sub btnDummyServiceStart_Click(sender As Object, e As EventArgs) Handles btnDownloadSpocosyFilesServiceStart.Click,
       btnLoadSpocosyFilesToDbService1Start.Click, btnLoadSpocosyFilesToDbService2Start.Click, btnLoadSpocosyFilesToDbService3Start.Click, btnLoadSpocosyFilesToDbService4Start.Click,
       btnLoadSpocosyFilesToDbService5Start.Click, btnLoadSpocosyDataServiceAStart.Click, btnLoadSpocosyDataServiceBStart.Click, btnLoadSpocosyDataServiceCStart.Click,
-      btnLoadSpocosyDataServiceDStart.Click, btnLoadSpocosyDataServiceEStart.Click, btnLoadSpocosyDataServiceXStart.Click, btnBetFairFeedServiceStart.Click
+      btnLoadSpocosyDataServiceDStart.Click, btnLoadSpocosyDataServiceEStart.Click, btnLoadSpocosyDataServiceXStart.Click, btnBetFairFeedService1Start.Click
 
         ' Disable the timer
         If Timer1.Enabled Then
@@ -114,7 +116,7 @@ Public Class frmMain
     Private Sub btnDummyServiceStop_Click(sender As Object, e As EventArgs) Handles btnDownloadSpocosyFilesServiceStop.Click,
       btnLoadSpocosyFilesToDbService1Stop.Click, btnLoadSpocosyFilesToDbService2Stop.Click, btnLoadSpocosyFilesToDbService3Stop.Click, btnLoadSpocosyFilesToDbService4Stop.Click,
       btnLoadSpocosyFilesToDbService5Stop.Click, btnLoadSpocosyDataServiceAStop.Click, btnLoadSpocosyDataServiceBStop.Click, btnLoadSpocosyDataServiceCStop.Click,
-      btnLoadSpocosyDataServiceDStop.Click, btnLoadSpocosyDataServiceEStop.Click, btnLoadSpocosyDataServiceXStop.Click, btnBetFairFeedServiceStop.Click
+      btnLoadSpocosyDataServiceDStop.Click, btnLoadSpocosyDataServiceEStop.Click, btnLoadSpocosyDataServiceXStop.Click, btnBetFairFeedService1Stop.Click
 
         ' Disable the timer
         If Timer1.Enabled Then
@@ -253,7 +255,7 @@ Public Class frmMain
     Private Sub btnMonitorServiceNameChangeSettings_Click(sender As Object, e As EventArgs) Handles btnDownloadSpocosyFilesServiceSettings.Click,
       btnLoadSpocosyFilesToDbService1Settings.Click, btnLoadSpocosyFilesToDbService2Settings.Click, btnLoadSpocosyFilesToDbService3Settings.Click, btnLoadSpocosyFilesToDbService4Settings.Click,
       btnLoadSpocosyFilesToDbService5Settings.Click, btnLoadSpocosyDataServiceASettings.Click, btnLoadSpocosyDataServiceBSettings.Click, btnLoadSpocosyDataServiceCSettings.Click,
-      btnLoadSpocosyDataServiceDSettings.Click, btnLoadSpocosyDataServiceESettings.Click, btnLoadSpocosyDataServiceXSettings.Click, btnBetFairFeedServiceSettings.Click
+      btnLoadSpocosyDataServiceDSettings.Click, btnLoadSpocosyDataServiceESettings.Click, btnLoadSpocosyDataServiceXSettings.Click, btnBetFairFeedService1Settings.Click
 
         Dim strServiceName As String
         strServiceName = sender.Name.Replace("btn", "").Replace("Settings", "")

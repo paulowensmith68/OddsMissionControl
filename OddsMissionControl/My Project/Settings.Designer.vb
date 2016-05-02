@@ -314,13 +314,13 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\BetFairFeedService\program\BetFairFeedService.exe.config")>  _
-        Public Property BetFairFeedServiceConfigFname() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\BetFairFeedService\program1\BetFairFeedService.exe.config")>  _
+        Public Property BetFairFeedService1ConfigFname() As String
             Get
-                Return CType(Me("BetFairFeedServiceConfigFname"),String)
+                Return CType(Me("BetFairFeedService1ConfigFname"),String)
             End Get
             Set
-                Me("BetFairFeedServiceConfigFname") = value
+                Me("BetFairFeedService1ConfigFname") = value
             End Set
         End Property
         
@@ -333,6 +333,31 @@ Namespace My
             Get
                 Return CType(Me("ConnectionString"),String)
             End Get
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\BetFairFeedService\program2\BetFairFeedService.exe.config")>  _
+        Public Property BetFairFeedService2ConfigFname() As String
+            Get
+                Return CType(Me("BetFairFeedService2ConfigFname"),String)
+            End Get
+            Set
+                Me("BetFairFeedService2ConfigFname") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\HousekeepStagingService\program\HousekeepStagingService.exe.config"& _ 
+            "")>  _
+        Public Property HousekeepStagingServiceConfigFname() As String
+            Get
+                Return CType(Me("HousekeepStagingServiceConfigFname"),String)
+            End Get
+            Set
+                Me("HousekeepStagingServiceConfigFname") = value
+            End Set
         End Property
     End Class
 End Namespace

@@ -115,18 +115,18 @@ Partial Class frmMain
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.TextBox25 = New System.Windows.Forms.TextBox()
-        Me.Button50 = New System.Windows.Forms.Button()
-        Me.Button51 = New System.Windows.Forms.Button()
+        Me.btnBetFairFeedService2Start = New System.Windows.Forms.Button()
+        Me.btnBetFairFeedService2Stop = New System.Windows.Forms.Button()
         Me.Label31 = New System.Windows.Forms.Label()
-        Me.Button52 = New System.Windows.Forms.Button()
-        Me.TextBox27 = New System.Windows.Forms.TextBox()
+        Me.btnBetFairFeedService2Settings = New System.Windows.Forms.Button()
+        Me.tbxBetFairFeedService2Status = New System.Windows.Forms.TextBox()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.TextBox23 = New System.Windows.Forms.TextBox()
-        Me.btnBetFairFeedServiceStart = New System.Windows.Forms.Button()
-        Me.btnBetFairFeedServiceStop = New System.Windows.Forms.Button()
+        Me.btnBetFairFeedService1Start = New System.Windows.Forms.Button()
+        Me.btnBetFairFeedService1Stop = New System.Windows.Forms.Button()
         Me.Label25 = New System.Windows.Forms.Label()
-        Me.btnBetFairFeedServiceSettings = New System.Windows.Forms.Button()
-        Me.tbxBetFairFeedServiceStatus = New System.Windows.Forms.TextBox()
+        Me.btnBetFairFeedService1Settings = New System.Windows.Forms.Button()
+        Me.tbxBetFairFeedService1Status = New System.Windows.Forms.TextBox()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.btnStopAllServices = New System.Windows.Forms.Button()
         Me.rtbLog = New System.Windows.Forms.RichTextBox()
@@ -150,12 +150,21 @@ Partial Class frmMain
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.btnRefreshAutoOff = New System.Windows.Forms.Button()
         Me.btnRefreshAutoOn = New System.Windows.Forms.Button()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.btnHousekeepStagingServiceStart = New System.Windows.Forms.Button()
+        Me.btnHousekeepStagingServiceStop = New System.Windows.Forms.Button()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.btnHousekeepStagingServiceSettings = New System.Windows.Forms.Button()
+        Me.tbxHousekeepStagingServiceStatus = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnDownloadSpocosyFilesServiceSettings
@@ -213,7 +222,7 @@ Partial Class frmMain
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox1.Location = New System.Drawing.Point(45, 99)
+        Me.GroupBox1.Location = New System.Drawing.Point(45, 78)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(917, 70)
         Me.GroupBox1.TabIndex = 51
@@ -304,7 +313,7 @@ Partial Class frmMain
         Me.GroupBox2.Controls.Add(Me.btnLoadSpocosyFilesToDbService1Settings)
         Me.GroupBox2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GroupBox2.Location = New System.Drawing.Point(45, 180)
+        Me.GroupBox2.Location = New System.Drawing.Point(45, 154)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(917, 216)
         Me.GroupBox2.TabIndex = 52
@@ -753,7 +762,7 @@ Partial Class frmMain
         Me.GroupBox3.Controls.Add(Me.btnLoadSpocosyDataServiceASettings)
         Me.GroupBox3.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GroupBox3.Location = New System.Drawing.Point(45, 413)
+        Me.GroupBox3.Location = New System.Drawing.Point(45, 381)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(917, 252)
         Me.GroupBox3.TabIndex = 53
@@ -1239,22 +1248,22 @@ Partial Class frmMain
         Me.GroupBox4.BackColor = System.Drawing.Color.MistyRose
         Me.GroupBox4.Controls.Add(Me.Label30)
         Me.GroupBox4.Controls.Add(Me.TextBox25)
-        Me.GroupBox4.Controls.Add(Me.Button50)
-        Me.GroupBox4.Controls.Add(Me.Button51)
+        Me.GroupBox4.Controls.Add(Me.btnBetFairFeedService2Start)
+        Me.GroupBox4.Controls.Add(Me.btnBetFairFeedService2Stop)
         Me.GroupBox4.Controls.Add(Me.Label31)
-        Me.GroupBox4.Controls.Add(Me.Button52)
-        Me.GroupBox4.Controls.Add(Me.TextBox27)
+        Me.GroupBox4.Controls.Add(Me.btnBetFairFeedService2Settings)
+        Me.GroupBox4.Controls.Add(Me.tbxBetFairFeedService2Status)
         Me.GroupBox4.Controls.Add(Me.Label24)
         Me.GroupBox4.Controls.Add(Me.TextBox23)
-        Me.GroupBox4.Controls.Add(Me.btnBetFairFeedServiceStart)
-        Me.GroupBox4.Controls.Add(Me.btnBetFairFeedServiceStop)
+        Me.GroupBox4.Controls.Add(Me.btnBetFairFeedService1Start)
+        Me.GroupBox4.Controls.Add(Me.btnBetFairFeedService1Stop)
         Me.GroupBox4.Controls.Add(Me.Label25)
-        Me.GroupBox4.Controls.Add(Me.btnBetFairFeedServiceSettings)
-        Me.GroupBox4.Controls.Add(Me.tbxBetFairFeedServiceStatus)
+        Me.GroupBox4.Controls.Add(Me.btnBetFairFeedService1Settings)
+        Me.GroupBox4.Controls.Add(Me.tbxBetFairFeedService1Status)
         Me.GroupBox4.Controls.Add(Me.Label26)
         Me.GroupBox4.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox4.Location = New System.Drawing.Point(45, 682)
+        Me.GroupBox4.Location = New System.Drawing.Point(45, 639)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(917, 101)
         Me.GroupBox4.TabIndex = 54
@@ -1282,29 +1291,30 @@ Partial Class frmMain
         Me.TextBox25.Size = New System.Drawing.Size(227, 23)
         Me.TextBox25.TabIndex = 57
         Me.TextBox25.TabStop = False
+        Me.TextBox25.Text = "BetFairFeedService2"
         Me.TextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Button50
+        'btnBetFairFeedService2Start
         '
-        Me.Button50.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Button50.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button50.Location = New System.Drawing.Point(512, 59)
-        Me.Button50.Name = "Button50"
-        Me.Button50.Size = New System.Drawing.Size(114, 29)
-        Me.Button50.TabIndex = 52
-        Me.Button50.Text = "Start Service"
-        Me.Button50.UseVisualStyleBackColor = False
+        Me.btnBetFairFeedService2Start.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.btnBetFairFeedService2Start.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBetFairFeedService2Start.Location = New System.Drawing.Point(512, 59)
+        Me.btnBetFairFeedService2Start.Name = "btnBetFairFeedService2Start"
+        Me.btnBetFairFeedService2Start.Size = New System.Drawing.Size(114, 29)
+        Me.btnBetFairFeedService2Start.TabIndex = 52
+        Me.btnBetFairFeedService2Start.Text = "Start Service"
+        Me.btnBetFairFeedService2Start.UseVisualStyleBackColor = False
         '
-        'Button51
+        'btnBetFairFeedService2Stop
         '
-        Me.Button51.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Button51.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button51.Location = New System.Drawing.Point(632, 59)
-        Me.Button51.Name = "Button51"
-        Me.Button51.Size = New System.Drawing.Size(114, 29)
-        Me.Button51.TabIndex = 51
-        Me.Button51.Text = "Stop Service"
-        Me.Button51.UseVisualStyleBackColor = False
+        Me.btnBetFairFeedService2Stop.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.btnBetFairFeedService2Stop.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBetFairFeedService2Stop.Location = New System.Drawing.Point(632, 59)
+        Me.btnBetFairFeedService2Stop.Name = "btnBetFairFeedService2Stop"
+        Me.btnBetFairFeedService2Stop.Size = New System.Drawing.Size(114, 29)
+        Me.btnBetFairFeedService2Stop.TabIndex = 51
+        Me.btnBetFairFeedService2Stop.Text = "Stop Service"
+        Me.btnBetFairFeedService2Stop.UseVisualStyleBackColor = False
         '
         'Label31
         '
@@ -1316,29 +1326,29 @@ Partial Class frmMain
         Me.Label31.TabIndex = 56
         Me.Label31.Text = "Status"
         '
-        'Button52
+        'btnBetFairFeedService2Settings
         '
-        Me.Button52.BackColor = System.Drawing.SystemColors.Menu
-        Me.Button52.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button52.Location = New System.Drawing.Point(778, 59)
-        Me.Button52.Name = "Button52"
-        Me.Button52.Size = New System.Drawing.Size(114, 29)
-        Me.Button52.TabIndex = 53
-        Me.Button52.Text = "Change Settings"
-        Me.Button52.UseVisualStyleBackColor = False
-        Me.Button52.Visible = False
+        Me.btnBetFairFeedService2Settings.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnBetFairFeedService2Settings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBetFairFeedService2Settings.Location = New System.Drawing.Point(778, 59)
+        Me.btnBetFairFeedService2Settings.Name = "btnBetFairFeedService2Settings"
+        Me.btnBetFairFeedService2Settings.Size = New System.Drawing.Size(114, 29)
+        Me.btnBetFairFeedService2Settings.TabIndex = 53
+        Me.btnBetFairFeedService2Settings.Text = "Change Settings"
+        Me.btnBetFairFeedService2Settings.UseVisualStyleBackColor = False
+        Me.btnBetFairFeedService2Settings.Visible = False
         '
-        'TextBox27
+        'tbxBetFairFeedService2Status
         '
-        Me.TextBox27.BackColor = System.Drawing.Color.AliceBlue
-        Me.TextBox27.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox27.Location = New System.Drawing.Point(348, 62)
-        Me.TextBox27.Name = "TextBox27"
-        Me.TextBox27.ReadOnly = True
-        Me.TextBox27.Size = New System.Drawing.Size(139, 23)
-        Me.TextBox27.TabIndex = 55
-        Me.TextBox27.TabStop = False
-        Me.TextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.tbxBetFairFeedService2Status.BackColor = System.Drawing.Color.AliceBlue
+        Me.tbxBetFairFeedService2Status.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxBetFairFeedService2Status.Location = New System.Drawing.Point(348, 62)
+        Me.tbxBetFairFeedService2Status.Name = "tbxBetFairFeedService2Status"
+        Me.tbxBetFairFeedService2Status.ReadOnly = True
+        Me.tbxBetFairFeedService2Status.Size = New System.Drawing.Size(139, 23)
+        Me.tbxBetFairFeedService2Status.TabIndex = 55
+        Me.tbxBetFairFeedService2Status.TabStop = False
+        Me.tbxBetFairFeedService2Status.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label24
         '
@@ -1361,30 +1371,30 @@ Partial Class frmMain
         Me.TextBox23.Size = New System.Drawing.Size(227, 23)
         Me.TextBox23.TabIndex = 49
         Me.TextBox23.TabStop = False
-        Me.TextBox23.Text = "BetFairFeedService"
+        Me.TextBox23.Text = "BetFairFeedService1"
         Me.TextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'btnBetFairFeedServiceStart
+        'btnBetFairFeedService1Start
         '
-        Me.btnBetFairFeedServiceStart.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnBetFairFeedServiceStart.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBetFairFeedServiceStart.Location = New System.Drawing.Point(512, 23)
-        Me.btnBetFairFeedServiceStart.Name = "btnBetFairFeedServiceStart"
-        Me.btnBetFairFeedServiceStart.Size = New System.Drawing.Size(114, 29)
-        Me.btnBetFairFeedServiceStart.TabIndex = 42
-        Me.btnBetFairFeedServiceStart.Text = "Start Service"
-        Me.btnBetFairFeedServiceStart.UseVisualStyleBackColor = False
+        Me.btnBetFairFeedService1Start.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.btnBetFairFeedService1Start.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBetFairFeedService1Start.Location = New System.Drawing.Point(512, 23)
+        Me.btnBetFairFeedService1Start.Name = "btnBetFairFeedService1Start"
+        Me.btnBetFairFeedService1Start.Size = New System.Drawing.Size(114, 29)
+        Me.btnBetFairFeedService1Start.TabIndex = 42
+        Me.btnBetFairFeedService1Start.Text = "Start Service"
+        Me.btnBetFairFeedService1Start.UseVisualStyleBackColor = False
         '
-        'btnBetFairFeedServiceStop
+        'btnBetFairFeedService1Stop
         '
-        Me.btnBetFairFeedServiceStop.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnBetFairFeedServiceStop.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBetFairFeedServiceStop.Location = New System.Drawing.Point(632, 23)
-        Me.btnBetFairFeedServiceStop.Name = "btnBetFairFeedServiceStop"
-        Me.btnBetFairFeedServiceStop.Size = New System.Drawing.Size(114, 29)
-        Me.btnBetFairFeedServiceStop.TabIndex = 41
-        Me.btnBetFairFeedServiceStop.Text = "Stop Service"
-        Me.btnBetFairFeedServiceStop.UseVisualStyleBackColor = False
+        Me.btnBetFairFeedService1Stop.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.btnBetFairFeedService1Stop.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBetFairFeedService1Stop.Location = New System.Drawing.Point(632, 23)
+        Me.btnBetFairFeedService1Stop.Name = "btnBetFairFeedService1Stop"
+        Me.btnBetFairFeedService1Stop.Size = New System.Drawing.Size(114, 29)
+        Me.btnBetFairFeedService1Stop.TabIndex = 41
+        Me.btnBetFairFeedService1Stop.Text = "Stop Service"
+        Me.btnBetFairFeedService1Stop.UseVisualStyleBackColor = False
         '
         'Label25
         '
@@ -1396,28 +1406,28 @@ Partial Class frmMain
         Me.Label25.TabIndex = 48
         Me.Label25.Text = "Status"
         '
-        'btnBetFairFeedServiceSettings
+        'btnBetFairFeedService1Settings
         '
-        Me.btnBetFairFeedServiceSettings.BackColor = System.Drawing.SystemColors.Menu
-        Me.btnBetFairFeedServiceSettings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBetFairFeedServiceSettings.Location = New System.Drawing.Point(778, 23)
-        Me.btnBetFairFeedServiceSettings.Name = "btnBetFairFeedServiceSettings"
-        Me.btnBetFairFeedServiceSettings.Size = New System.Drawing.Size(114, 29)
-        Me.btnBetFairFeedServiceSettings.TabIndex = 43
-        Me.btnBetFairFeedServiceSettings.Text = "Change Settings"
-        Me.btnBetFairFeedServiceSettings.UseVisualStyleBackColor = False
+        Me.btnBetFairFeedService1Settings.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnBetFairFeedService1Settings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBetFairFeedService1Settings.Location = New System.Drawing.Point(778, 23)
+        Me.btnBetFairFeedService1Settings.Name = "btnBetFairFeedService1Settings"
+        Me.btnBetFairFeedService1Settings.Size = New System.Drawing.Size(114, 29)
+        Me.btnBetFairFeedService1Settings.TabIndex = 43
+        Me.btnBetFairFeedService1Settings.Text = "Change Settings"
+        Me.btnBetFairFeedService1Settings.UseVisualStyleBackColor = False
         '
-        'tbxBetFairFeedServiceStatus
+        'tbxBetFairFeedService1Status
         '
-        Me.tbxBetFairFeedServiceStatus.BackColor = System.Drawing.Color.AliceBlue
-        Me.tbxBetFairFeedServiceStatus.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxBetFairFeedServiceStatus.Location = New System.Drawing.Point(348, 26)
-        Me.tbxBetFairFeedServiceStatus.Name = "tbxBetFairFeedServiceStatus"
-        Me.tbxBetFairFeedServiceStatus.ReadOnly = True
-        Me.tbxBetFairFeedServiceStatus.Size = New System.Drawing.Size(139, 23)
-        Me.tbxBetFairFeedServiceStatus.TabIndex = 46
-        Me.tbxBetFairFeedServiceStatus.TabStop = False
-        Me.tbxBetFairFeedServiceStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.tbxBetFairFeedService1Status.BackColor = System.Drawing.Color.AliceBlue
+        Me.tbxBetFairFeedService1Status.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxBetFairFeedService1Status.Location = New System.Drawing.Point(348, 26)
+        Me.tbxBetFairFeedService1Status.Name = "tbxBetFairFeedService1Status"
+        Me.tbxBetFairFeedService1Status.ReadOnly = True
+        Me.tbxBetFairFeedService1Status.Size = New System.Drawing.Size(139, 23)
+        Me.tbxBetFairFeedService1Status.TabIndex = 46
+        Me.tbxBetFairFeedService1Status.TabStop = False
+        Me.tbxBetFairFeedService1Status.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label26
         '
@@ -1443,10 +1453,10 @@ Partial Class frmMain
         'rtbLog
         '
         Me.rtbLog.Font = New System.Drawing.Font("Verdana", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rtbLog.Location = New System.Drawing.Point(557, 18)
+        Me.rtbLog.Location = New System.Drawing.Point(413, 12)
         Me.rtbLog.Name = "rtbLog"
         Me.rtbLog.ReadOnly = True
-        Me.rtbLog.Size = New System.Drawing.Size(405, 75)
+        Me.rtbLog.Size = New System.Drawing.Size(405, 60)
         Me.rtbLog.TabIndex = 4
         Me.rtbLog.Text = ""
         '
@@ -1467,7 +1477,7 @@ Partial Class frmMain
         Me.btnRefreshStatus.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnRefreshStatus.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefreshStatus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnRefreshStatus.Location = New System.Drawing.Point(972, 18)
+        Me.btnRefreshStatus.Location = New System.Drawing.Point(827, 24)
         Me.btnRefreshStatus.Name = "btnRefreshStatus"
         Me.btnRefreshStatus.Size = New System.Drawing.Size(121, 27)
         Me.btnRefreshStatus.TabIndex = 62
@@ -1484,7 +1494,7 @@ Partial Class frmMain
         Me.GroupBox6.Controls.Add(Me.Label35)
         Me.GroupBox6.Controls.Add(Me.tbxFtpServerConnection)
         Me.GroupBox6.Controls.Add(Me.Label34)
-        Me.GroupBox6.Location = New System.Drawing.Point(980, 99)
+        Me.GroupBox6.Location = New System.Drawing.Point(980, 78)
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(234, 378)
         Me.GroupBox6.TabIndex = 63
@@ -1577,7 +1587,7 @@ Partial Class frmMain
         Me.GroupBox7.Controls.Add(Me.Label38)
         Me.GroupBox7.Controls.Add(Me.tbxSavedXmlCount)
         Me.GroupBox7.Controls.Add(Me.Label37)
-        Me.GroupBox7.Location = New System.Drawing.Point(980, 494)
+        Me.GroupBox7.Location = New System.Drawing.Point(980, 476)
         Me.GroupBox7.Name = "GroupBox7"
         Me.GroupBox7.Size = New System.Drawing.Size(234, 157)
         Me.GroupBox7.TabIndex = 64
@@ -1660,7 +1670,7 @@ Partial Class frmMain
         Me.btnRefreshAutoOff.Enabled = False
         Me.btnRefreshAutoOff.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefreshAutoOff.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnRefreshAutoOff.Location = New System.Drawing.Point(1097, 51)
+        Me.btnRefreshAutoOff.Location = New System.Drawing.Point(1097, 24)
         Me.btnRefreshAutoOff.Name = "btnRefreshAutoOff"
         Me.btnRefreshAutoOff.Size = New System.Drawing.Size(121, 27)
         Me.btnRefreshAutoOff.TabIndex = 65
@@ -1672,19 +1682,118 @@ Partial Class frmMain
         Me.btnRefreshAutoOn.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnRefreshAutoOn.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefreshAutoOn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnRefreshAutoOn.Location = New System.Drawing.Point(972, 51)
+        Me.btnRefreshAutoOn.Location = New System.Drawing.Point(965, 24)
         Me.btnRefreshAutoOn.Name = "btnRefreshAutoOn"
         Me.btnRefreshAutoOn.Size = New System.Drawing.Size(121, 27)
         Me.btnRefreshAutoOn.TabIndex = 66
         Me.btnRefreshAutoOn.Text = "Refresh Auto On"
         Me.btnRefreshAutoOn.UseVisualStyleBackColor = False
         '
+        'GroupBox5
+        '
+        Me.GroupBox5.BackColor = System.Drawing.Color.Thistle
+        Me.GroupBox5.Controls.Add(Me.Label29)
+        Me.GroupBox5.Controls.Add(Me.TextBox5)
+        Me.GroupBox5.Controls.Add(Me.btnHousekeepStagingServiceStart)
+        Me.GroupBox5.Controls.Add(Me.btnHousekeepStagingServiceStop)
+        Me.GroupBox5.Controls.Add(Me.Label40)
+        Me.GroupBox5.Controls.Add(Me.btnHousekeepStagingServiceSettings)
+        Me.GroupBox5.Controls.Add(Me.tbxHousekeepStagingServiceStatus)
+        Me.GroupBox5.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox5.ForeColor = System.Drawing.Color.Black
+        Me.GroupBox5.Location = New System.Drawing.Point(45, 746)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(917, 64)
+        Me.GroupBox5.TabIndex = 67
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "Housekeeping"
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.Location = New System.Drawing.Point(11, 30)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(43, 14)
+        Me.Label29.TabIndex = 50
+        Me.Label29.Text = "Name"
+        '
+        'TextBox5
+        '
+        Me.TextBox5.BackColor = System.Drawing.Color.LightGoldenrodYellow
+        Me.TextBox5.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox5.ForeColor = System.Drawing.Color.Black
+        Me.TextBox5.Location = New System.Drawing.Point(60, 26)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.ReadOnly = True
+        Me.TextBox5.Size = New System.Drawing.Size(227, 23)
+        Me.TextBox5.TabIndex = 49
+        Me.TextBox5.TabStop = False
+        Me.TextBox5.Text = "HousekeepStagingService"
+        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'btnHousekeepStagingServiceStart
+        '
+        Me.btnHousekeepStagingServiceStart.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.btnHousekeepStagingServiceStart.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHousekeepStagingServiceStart.Location = New System.Drawing.Point(512, 23)
+        Me.btnHousekeepStagingServiceStart.Name = "btnHousekeepStagingServiceStart"
+        Me.btnHousekeepStagingServiceStart.Size = New System.Drawing.Size(114, 29)
+        Me.btnHousekeepStagingServiceStart.TabIndex = 42
+        Me.btnHousekeepStagingServiceStart.Text = "Start Service"
+        Me.btnHousekeepStagingServiceStart.UseVisualStyleBackColor = False
+        '
+        'btnHousekeepStagingServiceStop
+        '
+        Me.btnHousekeepStagingServiceStop.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.btnHousekeepStagingServiceStop.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHousekeepStagingServiceStop.Location = New System.Drawing.Point(632, 23)
+        Me.btnHousekeepStagingServiceStop.Name = "btnHousekeepStagingServiceStop"
+        Me.btnHousekeepStagingServiceStop.Size = New System.Drawing.Size(114, 29)
+        Me.btnHousekeepStagingServiceStop.TabIndex = 41
+        Me.btnHousekeepStagingServiceStop.Text = "Stop Service"
+        Me.btnHousekeepStagingServiceStop.UseVisualStyleBackColor = False
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label40.Location = New System.Drawing.Point(294, 30)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(48, 14)
+        Me.Label40.TabIndex = 48
+        Me.Label40.Text = "Status"
+        '
+        'btnHousekeepStagingServiceSettings
+        '
+        Me.btnHousekeepStagingServiceSettings.BackColor = System.Drawing.SystemColors.Menu
+        Me.btnHousekeepStagingServiceSettings.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHousekeepStagingServiceSettings.Location = New System.Drawing.Point(778, 23)
+        Me.btnHousekeepStagingServiceSettings.Name = "btnHousekeepStagingServiceSettings"
+        Me.btnHousekeepStagingServiceSettings.Size = New System.Drawing.Size(114, 29)
+        Me.btnHousekeepStagingServiceSettings.TabIndex = 43
+        Me.btnHousekeepStagingServiceSettings.Text = "Change Settings"
+        Me.btnHousekeepStagingServiceSettings.UseVisualStyleBackColor = False
+        '
+        'tbxHousekeepStagingServiceStatus
+        '
+        Me.tbxHousekeepStagingServiceStatus.BackColor = System.Drawing.Color.AliceBlue
+        Me.tbxHousekeepStagingServiceStatus.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxHousekeepStagingServiceStatus.Location = New System.Drawing.Point(348, 26)
+        Me.tbxHousekeepStagingServiceStatus.Name = "tbxHousekeepStagingServiceStatus"
+        Me.tbxHousekeepStagingServiceStatus.ReadOnly = True
+        Me.tbxHousekeepStagingServiceStatus.Size = New System.Drawing.Size(139, 23)
+        Me.tbxHousekeepStagingServiceStatus.TabIndex = 46
+        Me.tbxHousekeepStagingServiceStatus.TabStop = False
+        Me.tbxHousekeepStagingServiceStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightGray
-        Me.ClientSize = New System.Drawing.Size(1226, 796)
+        Me.ClientSize = New System.Drawing.Size(1226, 843)
+        Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.btnRefreshAutoOn)
         Me.Controls.Add(Me.btnRefreshAutoOff)
         Me.Controls.Add(Me.GroupBox7)
@@ -1713,6 +1822,8 @@ Partial Class frmMain
         Me.GroupBox6.PerformLayout()
         Me.GroupBox7.ResumeLayout(False)
         Me.GroupBox7.PerformLayout()
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1799,21 +1910,21 @@ Partial Class frmMain
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents Label24 As System.Windows.Forms.Label
     Friend WithEvents TextBox23 As System.Windows.Forms.TextBox
-    Friend WithEvents btnBetFairFeedServiceStart As System.Windows.Forms.Button
-    Friend WithEvents btnBetFairFeedServiceStop As System.Windows.Forms.Button
+    Friend WithEvents btnBetFairFeedService1Start As System.Windows.Forms.Button
+    Friend WithEvents btnBetFairFeedService1Stop As System.Windows.Forms.Button
     Friend WithEvents Label25 As System.Windows.Forms.Label
-    Friend WithEvents btnBetFairFeedServiceSettings As System.Windows.Forms.Button
-    Friend WithEvents tbxBetFairFeedServiceStatus As System.Windows.Forms.TextBox
+    Friend WithEvents btnBetFairFeedService1Settings As System.Windows.Forms.Button
+    Friend WithEvents tbxBetFairFeedService1Status As System.Windows.Forms.TextBox
     Friend WithEvents Label26 As System.Windows.Forms.Label
     Friend WithEvents btnStopAllServices As System.Windows.Forms.Button
     Friend WithEvents rtbLog As System.Windows.Forms.RichTextBox
     Friend WithEvents Label30 As Label
     Friend WithEvents TextBox25 As TextBox
-    Friend WithEvents Button50 As Button
-    Friend WithEvents Button51 As Button
+    Friend WithEvents btnBetFairFeedService2Start As Button
+    Friend WithEvents btnBetFairFeedService2Stop As Button
     Friend WithEvents Label31 As Label
-    Friend WithEvents Button52 As Button
-    Friend WithEvents TextBox27 As TextBox
+    Friend WithEvents btnBetFairFeedService2Settings As Button
+    Friend WithEvents tbxBetFairFeedService2Status As TextBox
     Friend WithEvents btnStartAll As Button
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents btnRefreshStatus As Button
@@ -1842,4 +1953,12 @@ Partial Class frmMain
     Friend WithEvents Timer1 As Timer
     Friend WithEvents btnRefreshAutoOff As Button
     Friend WithEvents btnRefreshAutoOn As Button
+    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents Label29 As Label
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents btnHousekeepStagingServiceStart As Button
+    Friend WithEvents btnHousekeepStagingServiceStop As Button
+    Friend WithEvents Label40 As Label
+    Friend WithEvents btnHousekeepStagingServiceSettings As Button
+    Friend WithEvents tbxHousekeepStagingServiceStatus As TextBox
 End Class
