@@ -332,7 +332,7 @@ Public Class frmMain
 
         Dim countRows As Integer = 0
         Dim myConnection As New MySqlConnection(My.Settings.ConnectionString)
-        Dim myCommand As New MySqlCommand("SELECT count(*) FROM oddsmatching.saved_xml")
+        Dim myCommand As New MySqlCommand("SELECT count(*) FROM saved_xml")
         myCommand.CommandType = CommandType.Text
         myCommand.Connection = myConnection
 
@@ -357,7 +357,7 @@ Public Class frmMain
 
         Dim countRows As Integer = 0
         Dim myConnection As New MySqlConnection(My.Settings.ConnectionString)
-        Dim myCommand As New MySqlCommand("SELECT count(*) FROM oddsmatching.saved_streammed_xml")
+        Dim myCommand As New MySqlCommand("SELECT count(*) FROM saved_streammed_xml")
         myCommand.CommandType = CommandType.Text
         myCommand.Connection = myConnection
 
@@ -382,7 +382,7 @@ Public Class frmMain
 
         Dim countRows As Integer = 0
         Dim myConnection As New MySqlConnection(My.Settings.ConnectionString)
-        Dim myCommand As New MySqlCommand("SELECT count(*) FROM oddsmatching.bookmaker_xml_nodes;")
+        Dim myCommand As New MySqlCommand("SELECT count(*) FROM bookmaker_xml_nodes;")
         myCommand.CommandType = CommandType.Text
         myCommand.Connection = myConnection
 
