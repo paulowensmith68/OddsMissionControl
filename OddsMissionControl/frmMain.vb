@@ -26,6 +26,8 @@ Public Class frmMain
         myServiceNames.Add("LoadSpocosyDataServiceX")
         myServiceNames.Add("BetFairFeedService1")
         myServiceNames.Add("BetFairFeedService2")
+        myServiceNames.Add("BetFairFeedService3")
+        myServiceNames.Add("BookmakerHorseFeedService")
         myServiceNames.Add("HousekeepStagingService")
 
         ' Loop through each service object to create the list

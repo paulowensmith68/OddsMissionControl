@@ -59,6 +59,12 @@ Public Class OddsServiceClass
             Case "BetFairFeedService2"
                 strConfigPath = My.Settings.BetFairFeedService2ConfigFname
 
+            Case "BetFairFeedService3"
+                strConfigPath = My.Settings.BetFairFeedService3ConfigFname
+
+            Case "BookmakerHorseFeedService"
+                strConfigPath = My.Settings.BookmakerHorseFeedServiceConfigFname
+
             Case "HousekeepStagingService"
                 strConfigPath = My.Settings.HousekeepStagingServiceConfigFname
 

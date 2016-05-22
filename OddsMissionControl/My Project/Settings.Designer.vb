@@ -359,6 +359,31 @@ Namespace My
                 Return CType(Me("ConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\BetFairFeedService\program3\BetFairFeedService.exe.config")>  _
+        Public Property BetFairFeedService3ConfigFname() As String
+            Get
+                Return CType(Me("BetFairFeedService3ConfigFname"),String)
+            End Get
+            Set
+                Me("BetFairFeedService3ConfigFname") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\#myPrograms\BookmakerHorseFeedService\program\BookmakerHorseFeedService.exe.co"& _ 
+            "nfig")>  _
+        Public Property BookmakerHorseFeedServiceConfigFname() As String
+            Get
+                Return CType(Me("BookmakerHorseFeedServiceConfigFname"),String)
+            End Get
+            Set
+                Me("BookmakerHorseFeedServiceConfigFname") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

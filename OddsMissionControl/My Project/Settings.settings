@@ -81,5 +81,11 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Database=OddsMatching;Data Source=eu-cdbr-azure-north-e.cloudapp.net;User Id=b083cb50265fec;Password=263fb5f7;persistsecurityinfo=True</Value>
     </Setting>
+    <Setting Name="BetFairFeedService3ConfigFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\BetFairFeedService\program3\BetFairFeedService.exe.config</Value>
+    </Setting>
+    <Setting Name="BookmakerHorseFeedServiceConfigFname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\#myPrograms\BookmakerHorseFeedService\program\BookmakerHorseFeedService.exe.config</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
